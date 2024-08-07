@@ -25,5 +25,15 @@ h2 {
   margin: 0 auto;
   padding-left: 8%;
   padding-right: 8%;
-  background-color: bisque;
+}
+
+.testimonial {
+  display: flex;
+}
+
+.testimonial__card {
+  height: 300px;
+  width: 400px;
+  margin: 5px;
+  border: 1px solid orange;
 }/*# sourceMappingURL=index.css.map */

@@ -13,5 +13,18 @@ h2 {
   margin: 0 auto;
   padding-left: 8%;
   padding-right: 8%;
-  background-color: bisque;
+  // background-color: bisque;
 }
+
+// testimonial start
+.testimonial {
+  display: flex;
+}
+.testimonial__card {
+  height: 300px;
+  width: 400px;
+  margin: 5px;
+  // background-color: aliceblue;
+  border: 1px solid orange;
+}
+// testimonial end
