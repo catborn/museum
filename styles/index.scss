@@ -1,4 +1,6 @@
 @import "_fonts";
+@use "./extands";
+@import "./vars";
 
 * {
   font-family: "Avenir-Regular";
@@ -30,3 +32,75 @@ h2 {
   border: 1px solid orange;
 }
 // testimonials end
+
+/********************************** GALLERY ***********************************/
+.gallery {
+  &__container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__menu {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    padding-left: 2.9375rem;
+    border-bottom: 1.12px solid $line_gray;
+    > input[type="radio"] {
+      display: none;
+      &:checked + label {
+        cursor: default;
+        font-weight: bold;
+        color: $primary_color;
+        border-bottom-color: $secondary_color_black;
+      }
+    }
+    > label {
+      @extend text;
+      letter-spacing: 0.04em;
+      //////
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      cursor: pointer;
+      transition: color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+      color: $secondary_color_black;
+      background: 0 0;
+      border-bottom: 0.125rem solid transparent;
+      &:hover {
+        border-bottom-color: $secondary_color_black;
+      }
+    }
+  }
+  &__block {
+    margin: 0 0 0 10.4375rem;
+    width: 22.25rem;
+    overflow: hidden;
+    &-title {
+      color: $primary_color;
+      @extend text;
+      vertical-align: middle;
+      &:before {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 75%;
+        height: 1.5px;
+        background-color: $primary_color;
+        position: relative;
+      }
+      &:before {
+        margin-left: -100%;
+        left: -16.75px;
+      }
+    }
+    &-text {
+      color: #000000;
+      font-size: 2.5rem;
+      font-weight: bold;
+      line-height: 54.91px;
+      margin: 16.53px 0 0 0;
+    }
+  }
+}
+/********************************** GALLERY ***********************************/
