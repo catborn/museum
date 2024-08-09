@@ -9,7 +9,7 @@ const testimonialData = {
 const testimonalTitle = document.querySelector(".testimonial__title");
 const testimonalContainer = document.querySelector(".testimonial__container");
 
-fetch("https://randomuser.me/api/?results=3")
+fetch("https://randomuser.me/api/?results=4")
   .then((response) => response.json())
   .then((data) => {
     data.results.forEach((user) => {
