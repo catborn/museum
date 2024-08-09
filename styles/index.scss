@@ -18,15 +18,23 @@ h2 {
 }
 
 // testimonials start
-.testimonial {
+.testimonial__container {
   display: flex;
 }
+
 .testimonial__card {
-  height: 300px;
-  // width: 400px;
-  width: 40%;
+  display: grid;
+  width: 35%;
   margin: 1%;
-  // background-color: aliceblue;
-  border: 1px solid orange;
+}
+
+.stars {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 7%;
+}
+
+.stars:first-child img {
+  width: 20px;
 }
 // testimonials end

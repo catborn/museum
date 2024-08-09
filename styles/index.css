@@ -27,13 +27,22 @@ h2 {
   padding-right: 8%;
 }
 
-.testimonial {
+.testimonial__container {
   display: flex;
 }
 
 .testimonial__card {
-  height: 300px;
-  width: 40%;
+  display: grid;
+  width: 35%;
   margin: 1%;
-  border: 1px solid orange;
+}
+
+.stars {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 7%;
+}
+
+.stars:first-child img {
+  width: 20px;
 }/*# sourceMappingURL=index.css.map */
