@@ -51,16 +51,20 @@ h2 {
 /* Стили для header */
 .header{
   display: grid;
-  grid-template-columns: 1fr, 1fr;
+ grid-column: 1fr, 1fr;
+ grid-row: 1fr;
 
 }
 .menu {
+  display: grid;
   grid-column: 1;
 
 
 
 }
 .buttons{
+  display: grid;
+
   grid-column: 2;
 }
 
