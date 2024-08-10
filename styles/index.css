@@ -62,8 +62,10 @@ h2 {
   height: 1.1em;
   list-style: none;
 
-
-
+}
+.buttons{
+  position: relative;
+  list-style-type: none;
 }
 
 a {
