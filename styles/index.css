@@ -49,6 +49,11 @@ h2 {
 
 
 /* Стили для header */
+.header{
+  display: grid;
+  grid-template-columns:1fr 1fr ;
+  grid-template-rows: 1fr 1fr
+}
 .menu {
   display: grid;
   grid-area: "menu";
@@ -74,11 +79,6 @@ h2{
 
 }
 
-.buttons{
-display:flex;
 
-
-
-}
 
 /* Конец  header */
