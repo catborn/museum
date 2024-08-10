@@ -82,6 +82,7 @@ h2{
   list-style-type: none;
   padding-bottom: 60px;
   justify-content: right;
+  align-content:flex-start;
 }
 
 
