@@ -78,7 +78,10 @@ h2{
   color: rgba(0, 0, 0, 1);
 
 }
-
+.buttons{
+  grid-column:2;
+  grid-row:1;
+}
 
 
 /* Конец  header */
