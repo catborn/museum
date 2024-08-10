@@ -55,4 +55,8 @@ h2 {
   grid-template-columns: repeat(6, auto);
   width: 53em;
   height: 1.1em;
-  list-style: none;}
+  list-style: none;
+  font-size: 10px;
+  color:rgba(92, 92, 92, 1);
+  text-decoration: none;
+}
