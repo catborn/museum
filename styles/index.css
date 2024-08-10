@@ -52,7 +52,8 @@ h2 {
 .header{
   display: grid;
   grid-template-columns:1fr 1fr ;
-  grid-template-rows: 1fr 1fr
+ 
+  
 }
 .menu {
   display: grid;
@@ -60,7 +61,7 @@ h2 {
   grid-template-columns: repeat(6, auto);
   width: 50em;
   height: 1.1em;
-  font-size: 15 px;
+  font-size: 15px;
   list-style-type: none;
   padding-bottom: 60px;
 
@@ -79,8 +80,7 @@ h2{
 
 }
 .buttons{
-  grid-column:2;
-  grid-row:1;
+  grid-column: 2;
 }
 
 
