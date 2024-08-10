@@ -42,7 +42,16 @@ h2 {
   display: grid;
   width: 35%;
   margin: 1%;
+}
 
+.stars {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 7%;
+}
+
+.stars img {
+  width: 35px;
 }
 
 /********************************** GALLERY ***********************************/
@@ -179,17 +188,4 @@ h2 {
   background-image: url("../images/search_hover.svg");
 }
 
-/********************************** GALLERY ***********************************/
-
-}
-
-.stars {
-  display: flex;
-  justify-content: space-between;
-  padding-right: 7%;
-}
-
-.stars img {
-  width: 35px;
-}/*# sourceMappingURL=index.css.map */
-
+/********************************** GALLERY ***********************************//*# sourceMappingURL=index.css.map */
