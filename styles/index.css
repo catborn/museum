@@ -78,11 +78,10 @@ h2{
   display: grid;
   grid-area: "menu";
   grid-template-columns: repeat(2, auto);
-  width: 50em;
-  height: 1.1em;
-  font-size: 15px;
+ 
   list-style-type: none;
   padding-bottom: 60px;
+  justify-content: right;
 }
 
 
