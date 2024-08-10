@@ -74,4 +74,11 @@ h2{
 
 }
 
+.buttons{
+display: grid;
+grid-row:1;
+align-self:flex-end;
+
+}
+
 /* Конец  header */
