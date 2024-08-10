@@ -63,11 +63,11 @@ h2 {
 
 
 .log_in{
-  grid-column: 6 / 1;
+  grid-column: 6;
 
 }
 .getStarted{
-  grid-column: 7/ 1;
+  grid-column: 7;
  
 }
 a {
