@@ -52,7 +52,11 @@ h2 {
 .menu {
   display: grid;
   grid-area: "menu";
-  grid-template-columns: repeat(6, auto);
+  grid-template-columns: repeat(8, auto);
+  grid-template-areas:
+  "a b c d e f g h"
+  ;
+
   width: 50em;
   height: 1.1em;
   font-size: 15px;
@@ -60,8 +64,14 @@ h2 {
   padding-bottom: 60px;
 
 }
+
+
 .log_in{
-  justify-self: right;
+  grid-area: h;
+
+}
+.getStarted{
+  grid-area: i;
 }
 a {
   text-decoration: none;
