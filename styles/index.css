@@ -64,7 +64,8 @@ h2 {
 
 }
 .buttons{
-  position: relative;
+  position:absolute;
+  right: top;
   list-style-type: none;
 }
 
