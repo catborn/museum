@@ -46,3 +46,13 @@ h2 {
 .stars img {
   width: 35px;
 }/*# sourceMappingURL=index.css.map */
+
+
+/* Стили для header */
+.menu {
+  display: grid;
+  grid-area: "menu";
+  grid-template-columns: repeat(6, auto);
+  width: 53em;
+  height: 1.1em;
+  list-style: none;}
