@@ -67,10 +67,7 @@ h2 {
 }
 .buttons{
     display: flex;
-   justify-content: space-between;
-    gap:10px;
-    top: 0px;
-    right: 70px;
+    justify-content: space-between;
     list-style: none;
 }
 .log_in{
