@@ -71,16 +71,17 @@ h2 {
     list-style: none;
 }
 .log_in{
-width: Hug (57.05px)px;
-height: Hug (28.22px)px;
-gap: 5.61px;
-border-radius: 2.8px 0px 0px 0px;
-border: 0.7px 0px 0px 0px;
-background: rgba(255, 255, 255, 1);
+color: rgba(8, 8, 8, 1);
+;
 border: 0.7px solid rgba(230, 230, 230, 1)
 
 }
+.getStarted{
+  background-color:rgba(234, 116, 98, 1);
+  fcolor:rgba(255, 255, 255, 1);
+  border: 1px solid rgba(255, 255, 255, 1);
 
+}
 a {
   text-decoration: none;
   color:rgba(92, 92, 92, 1);
