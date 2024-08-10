@@ -75,7 +75,7 @@ h2{
 }
 
 .buttons{
-display: grid;
+display:flex;
 
 
 
