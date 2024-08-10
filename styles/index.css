@@ -61,7 +61,7 @@ h2 {
 
 }
 .log_in{
-  justify-content: right;
+  justify-self: right;
 }
 a {
   text-decoration: none;
