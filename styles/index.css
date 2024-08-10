@@ -67,9 +67,19 @@ h2 {
     display: flex;
     position: absolute;
     gap:10px;
-    top: 10px;
-    right: 50px;
+    top: 5px;
+    right: 60px;
     list-style: none;
+}
+.log_in{
+width: Hug (57.05px)px;
+height: Hug (28.22px)px;
+padding: 5.61px 14.02px 5.61px 14.02px;
+gap: 5.61px;
+border-radius: 2.8px 0px 0px 0px;
+border: 0.7px 0px 0px 0px;
+opacity: 0px;
+
 }
 
 a {
