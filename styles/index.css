@@ -50,33 +50,22 @@ h2 {
 
 /* Стили для header */
 .header{
-  display: grid;
  grid-column: 1fr, 1fr;
- grid-row: 1fr;
+ grid-row: 1fr, 1fr;
 
 }
 .menu {
   display: grid;
-  grid-column: 1;
+  grid-area: "menu";
+  grid-template-columns: repeat(6, auto);
+  width: 53em;
+  height: 1.1em;
+  list-style: none;
 
 
 
 }
-.buttons{
-  display: grid;
 
-  grid-column: 2;
-}
-
-
-.log_in{
-grid-column-start: 7;
-
-}
-.getStarted{
- grid-column-start: 8;
- 
-}
 a {
   text-decoration: none;
   color:rgba(92, 92, 92, 1);
