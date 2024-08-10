@@ -1,22 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Museum</title>
+    <link rel="icon" href="./images/museum.svg" type="image/svg" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Museum</title>
-  <link rel="icon" href="./images/museum.svg" type="image/svg">
-  <link rel="stylesheet" href="./styles/normalize.css">
-  <link rel="stylesheet" href="./styles/index.css">
-</head>
+  <body>
+    <div class="container">
+      <header>
+        <h2>Header</h2>
+      </header>
 
-<body>
-  <div class="container">
-    <header>
-      <h2>Header</h2>
-    </header>
+      <main>
+        <section class="gallery" id="gallery">
+          <h2>Gallery</h2>
+          <div class="gallery__container" id="gallery__container">
+            <div class="gallery__block">
+              <h3 class="gallery__block-title">GALLERY</h3>
+              <h3 class="gallery__block-text">Our special gallery</h3>
+            </div>
+            <div class="gallery__menu">
+              <input
+                checked
+                id="__menu_tab-btn-1"
+                name="tab-btn"
+                type="radio"
+                value=""
+              />
+              <label for="__menu_tab-btn-1" id="__menu_tab-btn-1">All</label>
+              <input
+                id="__menu_tab-btn-2"
+                name="tab-btn"
+                type="radio"
+                value=""
+              />
+              <label for="__menu_tab-btn-2" id="__menu_tab-btn-2"
+                >Harvard</label
+              >
+              <input
+                id="__menu_tab-btn-3"
+                name="tab-btn"
+                type="radio"
+                value=""
+              />
+              <label for="__menu_tab-btn-3">Museum 2</label>
+              <input
+                id="__menu_tab-btn-4"
+                name="tab-btn"
+                type="radio"
+                value=""
+              />
+              <label for="__menu_tab-btn-4">Museum 3</label>
+              <input
+                id="__menu_tab-btn-5"
+                name="tab-btn"
+                type="radio"
+                value=""
+              />
+              <label for="__menu_tab-btn-5">Museum 4</label>
+            </div>
+          </div>
+          </div>
+        </section>
 
-    <main>
+        <section class="testimonials">
+          <h2>Testimonials</h2>
+          <div class="testimonial">
+            <div class="testimonial__card">Test</div>
+            <div class="testimonial__card">Test</div>
+            <div class="testimonial__card">Test</div>
+          </div>
+        </section>
+      </main>
 
       <section class="gallery">
         <h2>Gallery</h2>
@@ -35,6 +94,8 @@
     </footer>
   </div>
   <script src="index.js"></script>
+<script src="./main.js"></script>
+    <script src="./museum1.js"></script>
 </body>
 
 </html>
