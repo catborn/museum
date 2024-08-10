@@ -66,9 +66,12 @@ a {
   font-weight: bold;
 }
 h2{
-  font-size: 33px;
+  font-size: 40px;
   font-weight: bold;
   padding-bottom: 60px;
+  gap:9px;
+  color: rgba(0, 0, 0, 1);
+
 }
 
 /* Конец  header */
