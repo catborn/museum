@@ -55,9 +55,13 @@ h2 {
 
 }
 .menu {
-  
+  grid-column: 1;
 
 
+
+}
+.buttons{
+  grid-column: 2;
 }
 
 
