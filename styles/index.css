@@ -49,6 +49,10 @@ h2 {
 
 
 /* Стили для header */
+.header{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
 
 .menu {
   display: grid;
@@ -75,10 +79,7 @@ h2{
 
 }
 .buttons{
-  display: grid;
-  grid-area: "menu";
-  grid-template-columns: repeat(2, auto);
- 
+  grid-column: 2;
   list-style-type: none;
   padding-bottom: 60px;
   justify-content: right;
