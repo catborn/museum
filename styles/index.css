@@ -49,10 +49,7 @@ h2 {
 
 
 /* Стили для header */
-.header{
-  display:grid;
-  grid-template-columns: 1fr 1fr;
-}
+
 
 .menu {
   display: grid;
@@ -78,13 +75,7 @@ h2{
   color: rgba(0, 0, 0, 1);
 
 }
-.buttons{
-  grid-column: 2;
-  list-style-type: none;
-  padding-bottom: 60px;
-  justify-content: right;
-  align-content:flex-start;
-}
+
 
 
 /* Конец  header */
