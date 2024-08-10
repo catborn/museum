@@ -59,6 +59,7 @@ h2 {
   grid-area: "menu";
   grid-template-columns: repeat(6, auto);
   width: 53em;
+  gap: 10px;
   height: 1.1em;
   list-style: none;
 
