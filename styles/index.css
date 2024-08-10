@@ -67,7 +67,7 @@ h2 {
     display: flex;
     position: absolute;
     gap:10px;
-    right: 60px;
+    right: 10px;
     list-style: none;
 }
 .log_in{
