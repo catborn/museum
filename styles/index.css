@@ -63,12 +63,12 @@ h2 {
 
 
 .log_in{
-  grid-column: 1 / 4;
+  grid-column: 2 / 1;
 
 }
 .getStarted{
-
-  margin-left: 450px;
+  grid-column: 1 / 2;
+ 
 }
 a {
   text-decoration: none;
