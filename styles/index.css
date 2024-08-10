@@ -63,8 +63,7 @@ h2 {
 
 
 .log_in{
-
-margin-left: 440px;
+  grid-column: 1 / 2;
 
 }
 .getStarted{
