@@ -16,9 +16,9 @@
       </header>
 
       <main>
-        <section class="gallery">
+        <section class="gallery" id="gallery">
           <h2>Gallery</h2>
-          <div class="gallery__container">
+          <div class="gallery__container" id="gallery__container">
             <div class="gallery__block">
               <h3 class="gallery__block-title">GALLERY</h3>
               <h3 class="gallery__block-text">Our special gallery</h3>
@@ -31,14 +31,16 @@
                 type="radio"
                 value=""
               />
-              <label for="__menu_tab-btn-1">All</label>
+              <label for="__menu_tab-btn-1" id="__menu_tab-btn-1">All</label>
               <input
                 id="__menu_tab-btn-2"
                 name="tab-btn"
                 type="radio"
                 value=""
               />
-              <label for="__menu_tab-btn-2">Museum 1</label>
+              <label for="__menu_tab-btn-2" id="__menu_tab-btn-2"
+                >Harvard</label
+              >
               <input
                 id="__menu_tab-btn-3"
                 name="tab-btn"
@@ -62,6 +64,7 @@
               <label for="__menu_tab-btn-5">Museum 4</label>
             </div>
           </div>
+          </div>
         </section>
 
         <section class="testimonials">
@@ -78,5 +81,8 @@
         <h2>Footer</h2>
       </footer>
     </div>
+
+    <script src="./main.js"></script>
+    <script src="./museum1.js"></script>
   </body>
 </html>
