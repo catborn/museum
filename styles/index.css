@@ -67,7 +67,6 @@ h2 {
     display: flex;
     position: absolute;
     gap:10px;
-    top: 5px;
     right: 60px;
     list-style: none;
 }
@@ -79,6 +78,8 @@ gap: 5.61px;
 border-radius: 2.8px 0px 0px 0px;
 border: 0.7px 0px 0px 0px;
 opacity: 0px;
+background: rgba(255, 255, 255, 1);
+border: 0.7px solid rgba(230, 230, 230, 1)
 
 }
 
