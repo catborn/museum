@@ -67,7 +67,7 @@ h2 {
     display: flex;
     position: absolute;
     gap:10px;
-    top: 15px;
+    top: 10px;
     right: 50px;
     list-style: none;
 }
