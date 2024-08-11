@@ -20,7 +20,7 @@ function displayArtwork(artObject) {
   const artworkDiv = document.getElementById('artwork');
   artworkDiv.innerHTML = `
     <h2>${artObject.longTitle}</h2>
-    <img src="${artObject.webImage.url}" alt="${artObject.title}" width="600" height="600">
+    <img src="${artObject.webImage.url}" alt="${artObject.title}" width="500" height="500">
   `;
 }
 
