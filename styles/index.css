@@ -112,16 +112,18 @@ h2 {
   margin: 1.033rem 0 0 0;
 }
 
+.hidden {
+  display: none !important;
+}
+
 .museum__container {
   margin-top: 3.75rem;
 }
 .museum__container-all {
+  width: 50%;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
-  width: 100%;
-  margin: 0px auto;
-  align-items: center;
 }
 .museum__container_picture {
   display: flex;
