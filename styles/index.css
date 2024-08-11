@@ -1,4 +1,5 @@
-.gallery__menu > label, .gallery__block-title {
+.gallery__menu > label,
+.gallery__block-title {
   font-weight: 500;
   font-size: 1.25625rem;
   line-height: 27.46px;
@@ -34,15 +35,14 @@ h2 {
   padding-right: 8%;
 }
 
-.testimonial {
+.testimonial__container {
   display: flex;
 }
 
 .testimonial__card {
-  height: 300px;
-  width: 40%;
+  display: grid;
+  width: 35%;
   margin: 1%;
-  border: 1px solid orange;
 }
 
 /********************************** GALLERY ***********************************/
@@ -59,10 +59,10 @@ h2 {
   padding-left: 2.9375rem;
   border-bottom: 1.12px solid #e5e5e5;
 }
-.gallery__menu > input[type=radio] {
+.gallery__menu > input[type="radio"] {
   display: none;
 }
-.gallery__menu > input[type=radio]:checked + label {
+.gallery__menu > input[type="radio"]:checked + label {
   cursor: default;
   font-weight: bold;
   color: #e36f2d;
@@ -182,3 +182,13 @@ h2 {
 }
 
 /********************************** GALLERY ***********************************/
+
+.stars {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 7%;
+}
+
+.stars img {
+  width: 35px;
+} /*# sourceMappingURL=index.css.map */
