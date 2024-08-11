@@ -9,37 +9,14 @@
 h2 {
   text-align: center;
 }
-
+// max-width page
 .container {
   max-width: 1920px;
   margin: 0 auto;
   padding-left: 8%;
   padding-right: 8%;
-  // background-color: bisque;
-  // border: 1px solid orangered;
 }
-
-// testimonials start
-.testimonial__container {
-  display: flex;
-}
-
-.testimonial__card {
-  display: grid;
-  width: 35%;
-  margin: 1%;
-}
-
-.stars {
-  display: flex;
-  justify-content: space-between;
-  padding-right: 7%;
-}
-
-.stars img {
-  width: 35px;
-}
-// testimonials end
+//end max-width page
 
 /* Стили для header */
 .header {
@@ -238,3 +215,25 @@ h2 {
 }
 
 /********************************** GALLERY ***********************************/
+
+// testimonials start
+.testimonial__container {
+  display: flex;
+}
+
+.testimonial__card {
+  display: grid;
+  width: 35%;
+  margin: 1%;
+}
+
+.stars {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 7%;
+}
+
+.stars img {
+  width: 35px;
+}
+// testimonials end
