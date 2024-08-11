@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .gallery__menu > label, .gallery__block-title {
   font-weight: 500;
   font-size: 1.25625rem;
@@ -52,13 +53,14 @@ h2 {
 
 .stars img {
   width: 35px;
+}
 
 /* Стили для header */
-.header{
- grid-column: 1fr, 1fr;
- grid-row: 1fr, 1fr;
-
+.header {
+  grid-column: 1fr, 1fr;
+  grid-row: 1fr, 1fr;
 }
+
 .menu {
   display: grid;
   grid-area: "menu";
@@ -68,48 +70,48 @@ h2 {
   height: 1.1em;
   list-style: none;
   padding-bottom: 60px;
+}
 
+.buttons {
+  display: flex;
+  position: absolute;
+  gap: 10px;
+  top: 0px;
+  right: 70px;
+  list-style: none;
 }
-.buttons{
-    display: flex;
-    position:absolute;
-    gap:10px;
-    top: 0px;
-    right: 70px;
-    list-style: none;
-}
-.log_in{
-width:65px;
-height:35px;
-color: rgba(8, 8, 8, 1);
-border: 0.7px solid rgba(230, 230, 230, 1);
-background-color: rgba(255, 255, 255, 1);
-;
 
+.log_in {
+  width: 65px;
+  height: 35px;
+  color: rgb(8, 8, 8);
+  border: 0.7px solid rgb(230, 230, 230);
+  background-color: rgb(255, 255, 255);
 }
-.getStarted{
-  width:130px;
-  height:35px;
-  background-color:rgb(234, 116, 98);
-  color:rgba(255, 255, 255, 1);
-  border: 1px solid rgba(255, 255, 255, 1);
 
+.getStarted {
+  width: 130px;
+  height: 35px;
+  background-color: rgb(234, 116, 98);
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
 }
+
 a {
   text-decoration: none;
-  color:rgba(92, 92, 92, 1);
+  color: rgb(92, 92, 92);
   font-weight: bold;
 }
-h2{
+
+h2 {
   font-size: 40px;
   font-weight: bold;
   padding-bottom: 60px;
-  gap:10px;
-  color: rgba(0, 0, 0, 1);
-
+  gap: 10px;
+  color: rgb(0, 0, 0);
 }
-/* Конец  header */
 
+/* Конец  header */
 /********************************** GALLERY ***********************************/
 .gallery__container {
   display: flex;
@@ -244,4 +246,4 @@ h2{
   background-image: url("../images/search_hover.svg");
 }
 
-/********************************** GALLERY ***********************************/
+/********************************** GALLERY ***********************************//*# sourceMappingURL=index.css.map */
