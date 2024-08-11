@@ -1,3 +1,10 @@
+.gallery__menu > label, .gallery__block-title {
+  font-weight: 500;
+  font-size: 1.25625rem;
+  line-height: 27.46px;
+  text-align: center;
+}
+
 @font-face {
   font-family: "Avenir-Regular";
   src: url("../fonts/Avenir-Regular.woff2") format("woff2");
@@ -45,9 +52,7 @@ h2 {
 
 .stars img {
   width: 35px;
-}/*# sourceMappingURL=index.css.map */
-
-
+}
 /* Стили для header */
 .header{
  grid-column: 1fr, 1fr;
@@ -104,4 +109,142 @@ h2{
 
 }
 
+
+
 /* Конец  header */
+
+/********************************** GALLERY ***********************************/
+.gallery__container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.gallery__menu {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  padding-left: 2.9375rem;
+  border-bottom: 1.12px solid #e5e5e5;
+}
+.gallery__menu > input[type=radio] {
+  display: none;
+}
+.gallery__menu > input[type=radio]:checked + label {
+  cursor: default;
+  font-weight: bold;
+  color: #e36f2d;
+  border-bottom-color: #000000;
+}
+.gallery__menu > label {
+  letter-spacing: 0.04em;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  cursor: pointer;
+  transition: color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  color: #000000;
+  background: 0 0;
+  border-bottom: 0.125rem solid transparent;
+}
+.gallery__menu > label:hover {
+  border-bottom-color: #000000;
+}
+.gallery__block {
+  margin: 0 0 0 10.4375rem;
+  width: 22.25rem;
+  overflow: hidden;
+}
+.gallery__block-title {
+  color: #e36f2d;
+  vertical-align: middle;
+}
+.gallery__block-title:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 75%;
+  height: 1.5px;
+  background-color: #e36f2d;
+  position: relative;
+}
+.gallery__block-title:before {
+  margin-left: -100%;
+  left: -16.75px;
+}
+.gallery__block-text {
+  font-family: "Avenir-Bold";
+  color: #000000;
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 3.43rem;
+  margin: 1.033rem 0 0 0;
+}
+
+.museum__container {
+  margin-top: 3.75rem;
+}
+.museum__container-all {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin: 0px auto;
+  align-items: center;
+}
+.museum__container_picture {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.museum__container_picture > img {
+  justify-content: center;
+  margin: 0 0 20px 0;
+  width: 60%;
+}
+.museum__container_picture > label {
+  font-size: 20px;
+}
+.museum__title {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.museum__search-result {
+  margin: 50px 0 0 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#museum__search_input-button {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+#museum__search-input {
+  width: 200px;
+  height: 40px;
+  border: 1px solid #000000;
+  padding: 0 10px 0 10px;
+  border-radius: 15px;
+}
+#museum__search-button {
+  background-image: url("../images/search.svg");
+  background-color: #f9f9f9;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 1px solid;
+  width: 50px;
+  height: 41px;
+  border-radius: 20px;
+}
+#museum__search-button:hover {
+  border: 2px solid;
+  background-color: #f9f9f9;
+  background-image: url("../images/search_hover.svg");
+}
+
+/********************************** GALLERY ***********************************/
