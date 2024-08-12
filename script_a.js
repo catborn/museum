@@ -4,10 +4,9 @@ async function getRandomArtwork() {
   try {
     const response = await fetch(url);
     const data = await response.json();
-console.log(data);
     displayArtwork(data);
   } catch (error) {
-    console.error('Error', error);
+    artworkDiv.textContent = error;
   }
 }
 
