@@ -282,6 +282,7 @@ h2 {
 
 .stars img {
   width: 35px;
+  height: 35px;
 }
 
 .footer_conteiner_main {
@@ -370,7 +371,7 @@ h2 {
   margin-bottom: 10px;
   align-self: center;
   display: flex;
-  background-image: linear-gradient(to right, #feffff, #E36F2D);
+  background-image: linear-gradient(to right, #feffff, #e36f2d);
   background-repeat: no-repeat;
   background-size: 0 100%;
   text-decoration: none;
@@ -422,7 +423,8 @@ h2 {
   color: #000000;
 }
 
-.info__header, .artwork {
+.info__header,
+.artwork {
   font-size: 30px;
   padding-bottom: 10px;
 }
