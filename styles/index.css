@@ -285,6 +285,10 @@ h2 {
   height: 35px;
 }
 
+.stars:hover {
+  transform: scale(1.09);
+}
+
 .footer_conteiner_main {
   margin-top: 5%;
   display: grid;
