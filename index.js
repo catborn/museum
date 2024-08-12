@@ -26,3 +26,30 @@ Interactive exhibits are what kids need! The tour guide was very knowledgeable a
     testimonalTitle.textContent = "Произошла ошибка";
   });
 // testimonial end
+
+    // start script for block footer
+    const footer_btn = document.getElementById("footer_btn");
+    const qouteOneParagraph = document.getElementById("qouteOne");
+    const qouteTwoParagraph = document.getElementById("qouteTwo");
+    footer_btn.addEventListener("click", getQoute);
+    const apiKey = "IKcXFfHkp073VsjIpV0Pcw==tuGLiz34hLnoEgNu";
+    
+    const footerApiOptions = {
+        method: "GET",
+        headers: {
+        "X-Api-Key": apiKey,
+        },
+    };
+    
+    const footerApiUrl = "https://api.api-ninjas.com/v1/quotes?category=art";
+    async function getQoute() {
+        const response = await fetch(footerApiUrl, footerApiOptions);
+        const data = await response.json();
+    
+        qouteOneParagraph.textContent = JSON.stringify(data[0].quote);
+        qouteTwoParagraph.textContent = JSON.stringify(data[0].author).slice(1,-1);
+        qouteOneParagraph.style.fontFamily = "Avenir-Bold";
+        qouteTwoParagraph.style.fontFamily = "Avenir-Regular";
+    };
+        
+    // finish script for block footer
