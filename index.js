@@ -50,6 +50,7 @@ Interactive exhibits are what kids need! The tour guide was very knowledgeable a
         qouteTwoParagraph.textContent = JSON.stringify(data[0].author).slice(1,-1);
         qouteOneParagraph.style.fontFamily = "Avenir-Bold";
         qouteTwoParagraph.style.fontFamily = "Avenir-Regular";
+        qouteOneParagraph.style.marginTop = "10%";
     };
         
     // finish script for block footer
