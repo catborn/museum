@@ -1,24 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Museum</title>
-    <link rel="icon" href="./images/museum.svg" type="image/svg" />
-    <link rel="stylesheet" href="./styles/normalize.css" />
-    <link rel="stylesheet" href="./styles/index.css" />
-  </head>
 
-  <body>
-    <div class="container">
-      <header>
-        <h2>Header</h2>
-      </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Museum</title>
+  <link rel="icon" href="./images/museum.svg" type="image/svg" />
+  <link rel="stylesheet" href="./styles/normalize.css" />
+  <link rel="stylesheet" href="./styles/index.css" />
+</head>
 
       <main>
-        <section class="gallery" id="gallery">
-          <h2>Gallery</h2>
+        
+<body>
+  <div class="container">
+    <!-- header  start -->
+    <header>
+
+      <ul class="menu">
+        <li><a href=" ">Home</a></li>
+        <li><a href=" ">Products</a></li>
+        <li><a href=" ">Showcase</a></li>
+
+      </ul>
+      <ul class="buttons">
+        <li><button class="log_in">Log in</button></li>
+        <li><button class="getStarted">Get started
+            <img src="./images/arrow-right-line.svg">
+          </button></li>
+      </ul>
+
+
+      <h2>Let's Find The Latest <br> News today! </h2>
+
+    </header>
+    <!-- header end -->
+
+    <main>
+      <section class="gallery" id="gallery"> 
           <div class="gallery__container" id="gallery__container">
+            
             <div class="gallery__block">
               <h3 class="gallery__block-title">GALLERY</h3>
               <h3 class="gallery__block-text">Our special gallery</h3>
@@ -54,42 +75,46 @@
                 type="radio"
                 value=""
               />
-              <label for="__menu_tab-btn-4">Museum 3</label>
+              <label for="__menu_tab-btn-4">Australia</label>
               <input
                 id="__menu_tab-btn-5"
                 name="tab-btn"
                 type="radio"
                 value=""
               />
-              <label for="__menu_tab-btn-5">Museum 4</label>
+              <label for="__menu_tab-btn-5">Rijks</label>
             </div>
           </div>
-          <div class="museum__container" id="museum__container">
-            <div class="museum__container-all hidden" id="museum__all"></div>
+          <div class="museum__container">
+            <div class="museum__container-all hidden" id="museum__all">
+              <a href="./index_re.html" target="_blank"><img src="./images/Рейксмузей.jpg" alt="Рейксмузей" width="400"
+                height="600"></a>
+            <a href="./index_a.html" target="_blank"><img src="./images/The National Museum of Australia.jpg"
+                alt="Australia_museum" width="400" height="400"></a>
+            </div>
             <div class="museum__one hidden" id="museum__one"></div>
             <div class="museum__two hidden" id="museum__two"></div>
             <div class="museum__three hidden" id="museum__three"></div>
             <div class="museum__four hidden" id="museum__four"></div>
           </div>
         </section>
+      <section class="testimonials">
+        <h2 class="testimonial__title">Testimonials</h2>
+        <div class="testimonial__container">
+        </div>
+      </section>
+    </main>
 
-        <section class="testimonials">
-          <h2>Testimonials</h2>
-          <div class="testimonial">
-            <div class="testimonial__card">Test</div>
-            <div class="testimonial__card">Test</div>
-            <div class="testimonial__card">Test</div>
-          </div>
-        </section>
-      </main>
-
-      <footer>
-        <h2>Footer</h2>
-      </footer>
-    </div>
-
-    <script src="./main.js"></script>
-    <script src="./museum1.js"></script>
-    <script src="./museum2.js"></script>
-  </body>
+    <footer>
+      <h2>Footer</h2>
+    </footer>
+  </div>
+  <script src="index.js"></script>
+  <script src="./main.js"></script>
+  <script src="./museum1.js"></script>
+  <script src="./museum2.js"></script>
+  <script src="./museum3.js"></script>
+  <script src="./museum4.js"></script>
+  </div>
+</body>
 </html>

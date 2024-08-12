@@ -9,37 +9,65 @@
 h2 {
   text-align: center;
 }
-
+// max-width page
 .container {
   max-width: 1920px;
   margin: 0 auto;
   padding-left: 8%;
   padding-right: 8%;
-  // background-color: bisque;
-  // border: 1px solid orangered;
 }
+//end max-width page
 
-// testimonials start
-.testimonial__container {
-  display: flex;
+/* Стили для header */
+.header {
+  grid-column: 1fr, 1fr;
+  grid-row: 1fr, 1fr;
 }
-
-.testimonial__card {
+.menu {
   display: grid;
-  width: 35%;
-  margin: 1%;
+  grid-area: "menu";
+  grid-template-columns: repeat(6, auto);
+  width: 53em;
+  gap: 10px;
+  height: 1.1em;
+  list-style: none;
+  padding-bottom: 60px;
 }
-
-.stars {
+.buttons {
   display: flex;
-  justify-content: space-between;
-  padding-right: 7%;
+  position: absolute;
+  gap: 10px;
+  top: 0px;
+  right: 70px;
+  list-style: none;
 }
-
-.stars img {
-  width: 35px;
+.log_in {
+  width: 65px;
+  height: 35px;
+  color: rgba(8, 8, 8, 1);
+  border: 0.7px solid rgba(230, 230, 230, 1);
+  background-color: rgba(255, 255, 255, 1);
 }
-// testimonials end
+.getStarted {
+  width: 130px;
+  height: 35px;
+  background-color: rgb(234, 116, 98);
+  color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+a {
+  text-decoration: none;
+  color: rgba(92, 92, 92, 1);
+  font-weight: bold;
+}
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom: 60px;
+  gap: 10px;
+  color: rgba(0, 0, 0, 1);
+}
+/* Конец  header */
 
 /********************************** GALLERY ***********************************/
 .gallery {
@@ -116,6 +144,21 @@ h2 {
   display: none !important;
 }
 .museum {
+  &__about {
+    margin: 0 0 10px 0;
+    display: flex;
+    margin: 0 0 10px 0;
+    flex-direction: column;
+    align-items: flex-start;
+    @extend %text;
+    > p {
+      text-align: start;
+    }
+
+    &_title {
+      font-family: "Avenir-Bold";
+    }
+  }
   &__container {
     margin-top: 3.75rem;
     &-all {
@@ -144,46 +187,64 @@ h2 {
   &__title {
     text-align: center;
     font-size: 1.5rem;
+    > a {
+      color: $secondary_color_black;
+      &:hover {
+        cursor: pointer;
+        color: $primary_color;
+        transition: 0.15s ease;
+      }
+    }
   }
   &__search {
-    &-result {
-      margin: 50px 0 0 0;
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: center;
-      gap: 1rem;
+    margin-top: 3.75rem;
+    &_one,
+    &_two,
+    &-three,
+    &_four {
+      &-result {
+        @extend %museum__search_result;
+      }
     }
   }
 }
 #museum__search {
-  &_input-button {
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-  }
-  &-input {
-    width: 200px;
-    height: 40px;
-    border: 1px solid $secondary_color_black;
-    padding: 0 10px 0 10px;
-    border-radius: 15px;
-  }
-  &-button {
-    background-image: url("../images/search.svg");
-    background-color: $secondary_color_white;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    border: 1px solid;
-    width: 50px;
-    height: 41px;
-    border-radius: 20px;
-    &:hover {
-      border: 2px solid;
-      background-color: $secondary_color_white;
-      background-image: url("../images/search_hover.svg");
+  &_one,
+  &_two,
+  &_three,
+  &_four {
+    &_input-button {
+      @extend %museum__search_input-button;
+    }
+    &-input {
+      @extend %museum__search_input;
+    }
+    &-button {
+      @extend %museum__search_button;
     }
   }
 }
 
 /********************************** GALLERY ***********************************/
+
+// testimonials start
+.testimonial__container {
+  display: flex;
+}
+
+.testimonial__card {
+  display: grid;
+  width: 35%;
+  margin: 1%;
+}
+
+.stars {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 7%;
+}
+
+.stars img {
+  width: 35px;
+}
+// testimonials end

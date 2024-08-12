@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
   setupHarvardSearch(); // Инициализация Harvard поиска при загрузке страницы
   setupClevelandSearch(); // Инициализация Cleveland поиска при загрузке страницы
+  setupAustralia(); // Инициализация Australia
+  setupRijksmuseumSearch(); // Инициализация Rijks
 
   const museumAll = document.getElementById("museum__all");
   const museumOne = document.getElementById("museum__one");
@@ -54,6 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
           museumTwo.classList.add("hidden");
           museumThree.classList.add("hidden");
           museumFour.classList.remove("hidden");
+          break;
         default:
           break;
       }

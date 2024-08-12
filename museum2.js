@@ -1,53 +1,65 @@
 const setupClevelandSearch = () => {
   const btn_museum2 = document.getElementById("__menu_tab-btn-3");
 
-  btn_museum2.addEventListener("click", async function () {
-    let museum__two = document.getElementById("museum__two");
+  // Создание и добавление нового контейнера, если его нет
+  let museum__two = document.getElementById("museum__two");
+  let existingContainer = museum__two.querySelector("#museum__container");
 
-    let existingContainer = museum__two.querySelector("#museum__container");
-    if (!existingContainer) {
-      // Создание и добавление нового контейнера
-      let div_museum2 = document.createElement("div");
-      div_museum2.classList.add("container");
-      div_museum2.id = "museum__container";
-      div_museum2.innerHTML = `
-        <form id="museum__search">
+  if (!existingContainer) {
+    let div_museum2 = document.createElement("div");
+    div_museum2.classList.add("container");
+    div_museum2.id = "museum__container";
+    div_museum2.innerHTML = `
+        <form id="museum__search_two">
           <div class="museum__container">
-            <h3 class="museum__title">The Cleveland Museum of Art</h3>
-            <div id="museum__search_input-button">
-            <input id="museum__search-input" name="search-input" type="text" value="" autocomplete="off">
-            <button type="submit" id="museum__search-button"></button>
-            <p class="museum__search-hint">
-              * введите ключевое слово, по которому хотите совершить поиск
-            </p>
+            <h3 class="museum__title"><a href="https://www.clevelandart.org/" target="_blank">The Cleveland Museum of Art</a></h3>
+            <div class="museum__about">
+            <span class="museum__about_title">About the Museum</span>
+            <p>The Cleveland Museum of Art is renowned for the quality 
+            and breadth of its collection, which includes more than 
+            63,000 artworks and spans 6,000 years of achievement in the arts. 
+            The museum is a significant international forum for exhibitions, 
+            scholarship, and performing arts and is a leader in digital innovations. 
+            </br>One of the top comprehensive art museums in the nation, recognized for its award-winning 
+            Open Access program and free of charge to all, the Cleveland Museum of Art is 
+            located in the University Circle neighborhood.</p>
             </div>
-            
+            <div id="museum__search_two_input-button">
+              <input id="museum__search_two-input" name="search-input" type="text" value="" autocomplete="off">
+              <button type="submit" id="museum__search_two-button"></button>
+              <p class="museum__search-hint">
+                * If you want to search by keyword, enter it
+              </p>
+            </div>
           </div>
-          <div class="museum__search-result">
-          <!-- Результаты поиска будут добавлены сюда -->
-        </div>
+          <div class="museum__search_two-result">
+            <!-- Результаты поиска будут добавлены сюда -->
+          </div>
         </form>
-        `;
-      museum__two.appendChild(div_museum2);
-    } else {
-      // Если контейнер уже существует, очищаем его содержимое
-      existingContainer.querySelector(".museum__search-result").innerHTML = "";
-    }
+      `;
+    museum__two.append(div_museum2);
+  }
 
-    // Добавление обработчика для отправки формы
-    document
-      .getElementById("museum__search")
-      .addEventListener("submit", async (event) => {
-        event.preventDefault();
-        await searchClevelandRecords();
-        // Очистка значения инпута после отправки формы
-        document.getElementById("museum__search-input").value = "";
-      });
+  // Обработчик клика на кнопку
+  btn_museum2.addEventListener("click", async function () {
+    // Инициализация поиска
+    if (document.getElementById("museum__search_two")) {
+      document
+        .getElementById("museum__search_two")
+        .addEventListener("submit", async (event) => {
+          event.preventDefault();
+          await searchClevelandRecords();
+          // Очистка значения инпута после отправки формы
+          document.getElementById("museum__search_two-input").value = "";
+        });
+    }
   });
 
   const searchClevelandRecords = async () => {
-    const searchQuery = document.getElementById("museum__search-input").value;
-
+    const searchQuery = document.getElementById(
+      "museum__search_two-input"
+    ).value;
+    // URL для второго запроса
     const finalUrl = new URL(
       "https://openaccess-api.clevelandart.org/api/artworks/?"
     );
@@ -56,7 +68,9 @@ const setupClevelandSearch = () => {
       q: searchQuery,
       limit: 100,
     }).toString();
+
     try {
+      // Второй запрос с использованием случайного номера страницы
       const finalResponse = await fetch(finalUrl);
       if (!finalResponse.ok) {
         throw new Error("Ошибка при получении данных.");
@@ -70,25 +84,23 @@ const setupClevelandSearch = () => {
       console.error("Произошла ошибка:", error);
     }
   };
-
   const getRandomItems = (array, numItems) => {
-    // Создаем копию массива и перемешиваем его
     const shuffled = array.slice(0);
     for (let i = shuffled.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
     }
-    // Возвращаем случайные элементы
     return shuffled.slice(0, numItems);
   };
 
   const displayResult = (finalJson) => {
     // Отображаем результаты поиска
-    const resultContainer = document.querySelector(".museum__search-result");
+    const resultContainer = museum__two.querySelector(
+      ".museum__search_two-result"
+    );
     resultContainer.innerHTML = ""; // Очистка предыдущих результатов
 
     if (finalJson.data && finalJson.data.length > 0) {
-      // Выбираем 3 случайные записи
       const randomRecords = getRandomItems(finalJson.data, 3);
       randomRecords.forEach((record) => {
         if (record.images && record.images.web && record.images.web.url) {
