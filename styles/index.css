@@ -1,18 +1,26 @@
 @charset "UTF-8";
-.gallery__menu > label, .gallery__block-title, .museum__about {
+.gallery__menu > label,
+.gallery__block-title,
+.museum__about {
   font-weight: 500;
   font-size: 1.25625rem;
   line-height: 27.46px;
   text-align: center;
 }
 
-#museum__search_one_input-button, #museum__search_two_input-button, #museum__search_three_input-button, #museum__search_four_input-button {
+#museum__search_one_input-button,
+#museum__search_two_input-button,
+#museum__search_three_input-button,
+#museum__search_four_input-button {
   display: flex;
   flex-direction: row;
   gap: 5px;
 }
 
-#museum__search_one-input, #museum__search_two-input, #museum__search_three-input, #museum__search_four-input {
+#museum__search_one-input,
+#museum__search_two-input,
+#museum__search_three-input,
+#museum__search_four-input {
   width: 200px;
   height: 40px;
   border: 1px solid #000000;
@@ -20,7 +28,10 @@
   border-radius: 15px;
 }
 
-#museum__search_one-button, #museum__search_two-button, #museum__search_three-button, #museum__search_four-button {
+#museum__search_one-button,
+#museum__search_two-button,
+#museum__search_three-button,
+#museum__search_four-button {
   background-image: url("../images/search.svg");
   background-color: #f9f9f9;
   background-position: center;
@@ -31,13 +42,19 @@
   height: 41px;
   border-radius: 20px;
 }
-#museum__search_one-button:hover, #museum__search_two-button:hover, #museum__search_three-button:hover, #museum__search_four-button:hover {
+#museum__search_one-button:hover,
+#museum__search_two-button:hover,
+#museum__search_three-button:hover,
+#museum__search_four-button:hover {
   border: 2px solid;
   background-color: #f9f9f9;
   background-image: url("../images/search_hover.svg");
 }
 
-.museum__search_one-result, .museum__search_two-result, .museum__search-three-result, .museum__search_four-result {
+.museum__search_one-result,
+.museum__search_two-result,
+.museum__search-three-result,
+.museum__search_four-result {
   margin: 50px 0 0 0;
   display: flex;
   flex-flow: row nowrap;
@@ -73,11 +90,21 @@ h2 {
   padding-left: 8%;
   padding-right: 8%;
 }
-
+.gallery__menu > label,
+.gallery__block-title {
+  font-weight: 500;
+  font-size: 1.25625rem;
+  line-height: 27.46px;
+  text-align: center;
+}
 /* Стили для header */
 .header {
   grid-column: 1fr, 1fr;
   grid-row: 1fr, 1fr;
+}
+
+.testimonial__container {
+  display: flex;
 }
 
 .menu {
@@ -89,6 +116,8 @@ h2 {
   height: 1.1em;
   list-style: none;
   padding-bottom: 60px;
+  width: 35%;
+  margin: 1%;
 }
 
 .buttons {
@@ -145,10 +174,10 @@ h2 {
   padding-left: 2.9375rem;
   border-bottom: 1.12px solid #e5e5e5;
 }
-.gallery__menu > input[type=radio] {
+.gallery__menu > input[type="radio"] {
   display: none;
 }
-.gallery__menu > input[type=radio]:checked + label {
+.gallery__menu > input[type="radio"]:checked + label {
   cursor: default;
   font-weight: bold;
   color: #e36f2d;
@@ -263,6 +292,22 @@ h2 {
   display: grid;
   width: 35%;
   margin: 1%;
+}
+#museum__search-button {
+  background-image: url("../images/search.svg");
+  background-color: #f9f9f9;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 1px solid;
+  width: 50px;
+  height: 41px;
+  border-radius: 20px;
+}
+#museum__search-button:hover {
+  border: 2px solid;
+  background-color: #f9f9f9;
+  background-image: url("../images/search_hover.svg");
 }
 
 .stars {
