@@ -12,7 +12,7 @@ async function getRandomArtwork() {
     const data = await response.json();
     displayArtwork(data.artObjects[0]);
   } catch (error) {
-    console.error('Error', error);
+    artworkDiv.textContent = error;
   }
 }
 
