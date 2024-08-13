@@ -37,6 +37,25 @@ h2 {
   padding-right: 8%;
 }
 
+.testimonial__container {
+  display: flex;
+}
+
+.testimonial__card {
+  display: grid;
+  width: 35%;
+  margin: 1%;
+}
+
+.stars {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 7%;
+}
+
+.stars img {
+  width: 35px;
+}
 /* Стили для header */
 .header {
   grid-column: 1fr, 1fr;
@@ -52,31 +71,43 @@ h2 {
   height: 1.1em;
   list-style: none;
   padding-bottom: 60px;
-}
+  padding-top: 15px;
 
-.buttons {
-  display: flex;
-  position: absolute;
-  gap: 10px;
-  top: 0px;
-  right: 70px;
-  list-style: none;
 }
-
-.log_in {
-  width: 65px;
-  height: 35px;
-  color: rgb(8, 8, 8);
-  border: 0.7px solid rgb(230, 230, 230);
-  background-color: rgb(255, 255, 255);
+.menu a:hover{
+	color:rgba(234, 116, 98, 1);
 }
+.buttons{
+    display: flex;
+    position:absolute;
+    gap:10px;
+    top: 0px;
+    right: 50px;
+    list-style: none;
+    padding-top: 15px;
+}
+.log_in{
+  width: Hug (111.49px)px;
+  height: Hug (56.2px)px;
+  padding: 11.1px 27.74px 11.1px 27.74px;
+  gap: 11.1px;
+  border-radius: 5.55px 5.55px 5.55px 5.55px;
+  border: 1.39px 0px 0px 0px;
+  opacity: 0px;
+  background: rgba(255, 255, 255, 1);
+  border: 1.39px solid rgba(230, 230, 230, 1);
+  font-weight: bold;
+}
+.getStarted{
+  padding: 11.1px 16.65px 11.1px 27.74px;
+  gap: 11.1px;
+  border-radius:5.55px 5.55px 5.55px 5.55px;
+  opacity: 0px;
+  background: rgba(234, 116, 98, 1);
+  border: 1px solid rgba(255, 255, 255, 1);
+  color:rgba(255, 255, 255, 1);
+  font-weight: bold;
 
-.getStarted {
-  width: 130px;
-  height: 35px;
-  background-color: rgb(234, 116, 98);
-  color: rgb(255, 255, 255);
-  border: 1px solid rgb(255, 255, 255);
 }
 
 a {
@@ -92,7 +123,10 @@ h2 {
   gap: 10px;
   color: rgb(0, 0, 0);
 }
-
+#arrow{
+  width:  (25.78px)px;
+  height:  (20.2px)px;
+}
 /* Конец  header */
 /********************************** GALLERY ***********************************/
 .gallery__container {
