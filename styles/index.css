@@ -122,6 +122,10 @@ h2 {
   gap: 10px;
   color: rgb(0, 0, 0);
 }
+#arrow{
+  width: auto;
+  height: auto;
+}
 /* Конец  header */
 /********************************** GALLERY ***********************************/
 .gallery__container {
