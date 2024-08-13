@@ -72,9 +72,10 @@ h2 {
   list-style: none;
   padding-bottom: 60px;
   padding-top: 15px;
+  padding-left: 10px;
 }
 .menu a:hover{
-	color:#225384;
+	color:rgba(234, 116, 98, 1);
 }
 .buttons{
     display: flex;
