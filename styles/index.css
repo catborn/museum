@@ -71,7 +71,7 @@ h2 {
   height: 1.1em;
   list-style: none;
   padding-bottom: 60px;
-  padding-top: 10px;
+  padding-top: 15px;
 
 }
 .buttons{
@@ -81,7 +81,7 @@ h2 {
     top: 0px;
     right: 70px;
     list-style: none;
-    padding-top: 10px;
+    padding-top: 15px;
 }
 .log_in{
   width: Hug (111.49px)px;
@@ -96,11 +96,16 @@ h2 {
   font-weight: bold;
 }
 .getStarted{
-  width:130px;
-  height:35px;
-  background-color:rgb(234, 116, 98);
-  color:rgba(255, 255, 255, 1);
+  width: Hug (196.78px)px;
+  height: Hug (56.2px)px;
+  padding: 11.1px 16.65px 11.1px 27.74px;
+  gap: 11.1px;
+  border-radius:5.55px 5.55px 5.55px 5.55px;
+  opacity: 0px;
+  background: rgba(234, 116, 98, 1);
   border: 1px solid rgba(255, 255, 255, 1);
+  color:rgba(255, 255, 255, 1);
+  font-weight: bold;
 
 }
 
