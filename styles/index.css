@@ -96,8 +96,7 @@ h2 {
   font-weight: bold;
 }
 .getStarted{
-  width: Hug (196.78px)px;
-  height: Hug (56.2px)px;
+
   padding: 11.1px 16.65px 11.1px 27.74px;
   gap: 11.1px;
   border-radius:5.55px 5.55px 5.55px 5.55px;
@@ -123,8 +122,8 @@ h2 {
   color: rgb(0, 0, 0);
 }
 #arrow{
-  width: 23px;
-  height: 20px;
+  width:  (25.78px)px;
+  height:  (20.2px)px;
 }
 /* Конец  header */
 /********************************** GALLERY ***********************************/
