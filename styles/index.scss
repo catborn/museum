@@ -454,3 +454,27 @@ h2 {
 #artwork {
   padding-top: 20px;
 }
+
+@media all and (max-width:450px) {
+  .museums__list {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr 0.5fr 1fr;
+
+  }
+
+  .museums__link-1 {
+    grid-area: 1/1/2/2;
+  }
+
+  .museums__link-2 {
+    grid-area: 2/1/3/2;
+  }
+
+  .museums__link-3 {
+    grid-area: 3/1/4/2;
+  }
+
+  .museums__link-4 {
+    grid-area: 4/1/5/2;
+  }
+}
