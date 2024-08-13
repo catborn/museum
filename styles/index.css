@@ -123,8 +123,8 @@ h2 {
   color: rgb(0, 0, 0);
 }
 #arrow{
-  width: auto;
-  height: auto;
+  width: 25px;
+  height: 25px;
 }
 /* Конец  header */
 /********************************** GALLERY ***********************************/
