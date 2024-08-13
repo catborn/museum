@@ -6,3 +6,39 @@
   line-height: 27.46px;
   text-align: center;
 }
+
+%museum__search_input-button {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+%museum__search_input {
+  width: 200px;
+  height: 40px;
+  border: 1px solid $secondary_color_black;
+  padding: 0 10px 0 10px;
+  border-radius: 15px;
+}
+%museum__search_button {
+  background-image: url("../images/search.svg");
+  background-color: $secondary_color_white;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 1px solid;
+  width: 50px;
+  height: 41px;
+  border-radius: 20px;
+  &:hover {
+    border: 2px solid;
+    background-color: $secondary_color_white;
+    background-image: url("../images/search_hover.svg");
+  }
+}
+%museum__search_result {
+  margin: 50px 0 0 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  gap: 1rem;
+}
