@@ -1,3 +1,19 @@
+// header start
+const searchInput = document.querySelector('.search');
+
+const divs = document.querySelectorAll('.museums_list');
+searchInput.addEventListener('keyup', function(event){
+  const word = event.target.value.toLowerCase();
+
+divs.forEach(function(item) {
+  item.querySelector('harvard').textContent.toLowerCase().includes(word) ? (item.style.display='block'): (item.style.display='none');
+})
+
+})
+
+
+// header end
+
 // testimonials start
 //JSON testimonials
 const quotes = {
