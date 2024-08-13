@@ -1,7 +1,7 @@
 // header start
 const searchInput = document.querySelector('.search');
 
-const divs = document.querySelectorAll('.museums_list');
+const divs = document.querySelectorAll('.museums');
 searchInput.addEventListener('keyup', function(event){
   const word = event.target.value.toLowerCase();
 
