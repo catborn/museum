@@ -1,12 +1,12 @@
 // header start
-const searchInput = document.querySelector('.search');
+const searchInput = document.querySelector('.search');// находитдоступ к  серч
 
-const divs = document.querySelectorAll('.museums');
+const divs = document.querySelectorAll('.museums__link');//доступ ко всем элементам класса museums__link
 searchInput.addEventListener('keyup', function(event){
-  const word = event.target.value.toLowerCase();
+  const word = event.target.value.toLowerCase();//переводит ввод в нижний регистр
 
 divs.forEach(function(item) {
-  item.querySelector('harvard').textContent.toLowerCase().includes(word) ? (item.style.display='block'): (item.style.display='none');
+  item.querySelector('.museum__name').textContent.toLowerCase().includes(word) ? (item.style.display='block'): (item.style.display='none');
 })
 
 })
