@@ -68,6 +68,7 @@ h2 {
   height: 1.1em;
   list-style: none;
   padding-bottom: 60px;
+  padding-top: 5px;
 
 }
 .buttons{
@@ -77,6 +78,7 @@ h2 {
     top: 0px;
     right: 70px;
     list-style: none;
+    padding-top:5px ;
 }
 .log_in{
 width:65px;
@@ -84,7 +86,7 @@ height:35px;
 color: rgba(8, 8, 8, 1);
 border: 0.7px solid rgba(230, 230, 230, 1);
 background-color: rgba(255, 255, 255, 1);
-;
+border-radius: 2%;
 
 }
 .getStarted{
