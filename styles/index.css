@@ -99,6 +99,8 @@ h2 {
   font-weight: bold;
 }
 .getStarted{
+  width: Hug (196.78px)px;
+  height: Hug (56.2px)px;
   padding: 11.1px 16.65px 11.1px 27.74px;
   gap: 11.1px;
   border-radius:5.55px 5.55px 5.55px 5.55px;
@@ -107,7 +109,6 @@ h2 {
   border: 1px solid rgba(255, 255, 255, 1);
   color:rgba(255, 255, 255, 1);
   font-weight: bold;
-
 }
 
 a {
