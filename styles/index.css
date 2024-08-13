@@ -72,6 +72,9 @@ h2 {
   list-style: none;
   padding-bottom: 60px;
   padding-top: 15px;
+  .link a:hover{
+    color:#225384;
+  }
 
 }
 .buttons{
@@ -96,7 +99,6 @@ h2 {
   font-weight: bold;
 }
 .getStarted{
-
   padding: 11.1px 16.65px 11.1px 27.74px;
   gap: 11.1px;
   border-radius:5.55px 5.55px 5.55px 5.55px;
