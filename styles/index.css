@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .gallery__menu > label, .gallery__block-title {
   font-weight: 500;
   font-size: 1.25625rem;
@@ -21,6 +22,8 @@
 }
 * {
   font-family: "Avenir-Regular";
+  padding: 0;
+  margin: 0;
 }
 
 h2 {
@@ -54,11 +57,11 @@ h2 {
   width: 35px;
 }
 /* Стили для header */
-.header{
- grid-column: 1fr, 1fr;
- grid-row: 1fr, 1fr;
-
+.header {
+  grid-column: 1fr, 1fr;
+  grid-row: 1fr, 1fr;
 }
+
 .menu {
   display: grid;
   grid-area: "menu";
@@ -68,7 +71,6 @@ h2 {
   height: 1.1em;
   list-style: none;
   padding-bottom: 60px;
-  padding-top: 5px;
 
 }
 .buttons{
@@ -78,7 +80,6 @@ h2 {
     top: 0px;
     right: 70px;
     list-style: none;
-    padding-top:5px ;
 }
 .log_in{
 width:65px;
@@ -86,35 +87,32 @@ height:35px;
 color: rgba(8, 8, 8, 1);
 border: 0.7px solid rgba(230, 230, 230, 1);
 background-color: rgba(255, 255, 255, 1);
-border-radius: 2%;
+;
 
 }
 .getStarted{
-  width:120px;
+  width:130px;
   height:35px;
   background-color:rgb(234, 116, 98);
   color:rgba(255, 255, 255, 1);
   border: 1px solid rgba(255, 255, 255, 1);
-  align-content: center;
+
 }
+
 a {
   text-decoration: none;
-  color:rgba(92, 92, 92, 1);
+  color: rgb(92, 92, 92);
   font-weight: bold;
 }
-h2{
+
+h2 {
   font-size: 40px;
   font-weight: bold;
   padding-bottom: 60px;
-  gap:10px;
-  color: rgba(0, 0, 0, 1);
-
+  gap: 10px;
+  color: rgb(0, 0, 0);
 }
-
-
-
 /* Конец  header */
-
 /********************************** GALLERY ***********************************/
 .gallery__container {
   display: flex;
@@ -249,4 +247,237 @@ h2{
   background-image: url("../images/search_hover.svg");
 }
 
+.museums {
+  padding-bottom: 20px;
+}
+
+.museums__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.museums__link-1 {
+  grid-area: 1/1/3/2;
+}
+
+.museums__link-2 {
+  grid-area: 1/2/2/3;
+}
+
+.museums__link-3 {
+  grid-area: 2/2/3/3;
+}
+
+.museums__link-4 {
+  grid-area: 1/3/3/4;
+}
+
+.museum__name {
+  font-size: 15px;
+}
+
+.museum__name:hover {
+  color: #f09c76;
+}
+
 /********************************** GALLERY ***********************************/
+.testimonial__container {
+  display: flex;
+}
+
+.testimonial__card {
+  display: grid;
+  width: 35%;
+  margin: 1%;
+}
+
+.stars {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 7%;
+}
+
+.stars img {
+  width: 35px;
+  height: 35px;
+}
+
+.stars:hover {
+  transform: scale(1.09);
+}
+
+.footer_conteiner_main {
+  margin-top: 5%;
+  display: grid;
+  grid-template-rows: 1fr 1fr 10%;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer_qoute {
+  margin-top: 2%;
+  display: grid;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  margin-bottom: 5%;
+}
+
+#footer_btn {
+  position: absolute;
+  width: 15vw;
+  top: 3%;
+  justify-self: center;
+  background: rgb(227, 111, 45);
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+#footer_btn:before {
+  position: absolute;
+  content: "";
+  transition: all 0.25s;
+  border-bottom: 2px solid rgb(227, 111, 45);
+  border-left: 2px solid rgb(227, 111, 45);
+  width: 10%;
+  height: 33%;
+  left: -10px;
+  bottom: -10px;
+}
+
+#footer_btn:after {
+  position: absolute;
+  content: "";
+  transition: all 0.25s;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  width: 10%;
+  height: 33%;
+  top: -10px;
+  right: -10px;
+}
+
+#footer_btn:hover:before {
+  width: 105%;
+  height: 145%;
+}
+
+#footer_btn:hover:after {
+  width: 105%;
+  height: 145%;
+}
+
+#qoutwOne {
+  text-align: center;
+}
+
+#qouteTwo {
+  text-align: right;
+}
+
+.footer_instagram_links {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  justify-content: center;
+  flex-direction: column;
+  display: grid;
+}
+
+.instagram_link {
+  text-align: center;
+  margin-bottom: 10px;
+  align-self: center;
+  display: flex;
+  background-image: linear-gradient(to right, #feffff, #e36f2d);
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.instagram_link:hover {
+  background-size: 100% 100%;
+  border-radius: 3px;
+}
+
+.instagram-link:hover {
+  box-shadow: 0px -25px 30px -16px rgb(227, 111, 45) inset;
+  width: auto;
+  border-radius: 5px;
+  justify-self: center;
+}
+
+.footer_span_links {
+  margin-left: 2%;
+  text-align: center;
+  padding-top: 2%;
+  font-family: "Avenir-Regular";
+}
+
+.instagram_icon {
+  width: 10%;
+  height: auto;
+}
+
+.footer_map {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  align-self: center;
+}
+
+.footer_copyright {
+  grid-column: 1/3;
+  grid-row: 3/4;
+  margin-top: 2%;
+  text-align: center;
+  font-family: "Avenir-Bold";
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #000000;
+}
+
+.info__header,
+.artwork {
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+
+.info__text {
+  padding-bottom: 20px;
+}
+
+.info__link {
+  color: #000000;
+  padding-bottom: 20px;
+}
+
+.info__link:hover {
+  color: #f09c76;
+}
+
+.info__btn {
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  background-color: #e5775c;
+  border-radius: none;
+}
+
+.info__btn:hover {
+  background-color: #f09c76;
+}
+
+#artwork {
+  padding-top: 20px;
+}/*# sourceMappingURL=index.css.map */
