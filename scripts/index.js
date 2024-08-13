@@ -1,5 +1,5 @@
 // header start
-const searchInput = document.querySelector('.search');// находитдоступ к  серч
+const searchInput = document.querySelector('.museum_search');// находитдоступ к  серч
 
 const divs = document.querySelectorAll('.museums__link');//доступ ко всем элементам класса museums__link
 searchInput.addEventListener('keyup', function(event){
