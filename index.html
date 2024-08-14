@@ -1,136 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Museum</title>
+    <link rel="icon" href="./images/museum.svg" type="image/svg" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Museum</title>
-  <link rel="icon" href="./images/museum.svg" type="image/svg" />
-  <link rel="stylesheet" href="./styles/normalize.css" />
-  <link rel="stylesheet" href="./styles/index.css" />
-</head>
-
-<body>
-  <div class="container">
-    <!-- header  start -->
-    <header>
-
-      <ul class="menu">
-        <li><a href=" ">Home</a></li>
-        <li><a href=" ">Products</a></li>
-        <li><a href=" ">Showcase</a></li>
-
-      </ul>
-      <ul class="buttons">
-        <li><button class="log_in">Log in</button></li>
-        <li><button class="getStarted">Get started
-            <img src="./images/arrow-right-line.svg">
-          </button></li>
-      </ul>
-
-
-      <h2>Let's Find The Latest <br> News today! </h2>
-
-    </header>
-    <!-- header end -->
-
-    <main>
-      <section class="gallery" id="gallery">
-        <h2>Gallery</h2>
-        <div class="gallery__container" id="gallery__container">
-          <div class="gallery__block">
-            <h3 class="gallery__block-title">GALLERY</h3>
-            <h3 class="gallery__block-text">Our special gallery</h3>
+  <body>
+    <div class="container">
+      <!-- header  start -->
+      <header>
+        <ul class="menu">
+          <li><a href=" ">Home</a></li>
+          <li><a href=" ">Products</a></li>
+          <li><a href=" ">Showcase</a></li>
+        </ul>
+        <ul class="buttons">
+          <li><button class="log_in">Log in</button></li>
+          <li>
+            <button class="getStarted">
+              Get started
+              <img src="./images/Vector.svg" id="arrow" />
+            </button>
+          </li>
+        </ul>
+        <h2>Let's Find The Museum!</h2>
+        <input type="text" class="museum_search" placeholder="Search museum" />
+      </header>
+      <!-- header end -->
+      <main>
+        <section class="gallery" id="gallery">
+          <div class="gallery__container" id="gallery__container">
+            <div class="gallery__block">
+              <h3 class="gallery__block-title">GALLERY</h3>
+              <h3 class="gallery__block-text">Our special gallery</h3>
+            </div>
+            <div class="gallery__menu">
+              <input
+                checked
+                id="__menu_tab-btn-1"
+                name="tab-btn"
+                type="radio"
+                value=""
+              />
+              <label for="__menu_tab-btn-1" id="__menu_tab-btn-1">All</label>
+              <input
+                id="__menu_tab-btn-2"
+                name="tab-btn"
+                type="radio"
+                value=""
+              />
+              <label for="__menu_tab-btn-2" id="__menu_tab-btn-2"
+                >Harvard</label
+              >
+              <input
+                id="__menu_tab-btn-3"
+                name="tab-btn"
+                type="radio"
+                value=""
+              />
+              <label for="__menu_tab-btn-3">Cleveland</label>
+              <input
+                id="__menu_tab-btn-4"
+                name="tab-btn"
+                type="radio"
+                value=""
+              />
+              <label for="__menu_tab-btn-4">Australia</label>
+              <input
+                id="__menu_tab-btn-5"
+                name="tab-btn"
+                type="radio"
+                value=""
+              />
+              <label for="__menu_tab-btn-5">Rijks</label>
+            </div>
           </div>
-          <div class="gallery__menu">
-            <input checked id="__menu_tab-btn-1" name="tab-btn" type="radio" value="" />
-            <label for="__menu_tab-btn-1" id="__menu_tab-btn-1">All</label>
-            <input id="__menu_tab-btn-2" name="tab-btn" type="radio" value="" />
-            <label for="__menu_tab-btn-2" id="__menu_tab-btn-2">Harvard</label>
-            <input id="__menu_tab-btn-3" name="tab-btn" type="radio" value="" />
-            <label for="__menu_tab-btn-3">Museum 2</label>
-            <input id="__menu_tab-btn-4" name="tab-btn" type="radio" value="" />
-            <label for="__menu_tab-btn-4">Museum 3</label>
-            <input id="__menu_tab-btn-5" name="tab-btn" type="radio" value="" />
-            <label for="__menu_tab-btn-5">Museum 4</label>
+          <div class="museum__container">
+            <div class="museum__one hidden" id="museum__one"></div>
+            <div class="museum__two hidden" id="museum__two"></div>
+            <div class="museum__three hidden" id="museum__three"></div>
+            <div class="museum__four hidden" id="museum__four"></div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="museums">
-        <h2 class="museums__header">Gallery</h2>
+        <section class="museums" id="museums">
+          <h2 class="museums__header">Gallery</h2>
           <div class="museums__list">
-              <div class="museums__link-1">
-              <a href="./index_re.html" target="_blank" ><img src="./images/Рейксмузей.jpg" alt="rijksmuseum_museum" width="400" height="600">
-                <p class="museum__name" id="museums__name_rijksmuseum">The Rijksmuseum</p>
+            <div class="museums__link-1 museums__link">
+              <a href="./index_re.html" target="_blank"
+                ><img
+                  src="./images/Рейксмузей.jpg"
+                  alt="rijksmuseum_museum"
+                  width="400"
+                  height="600"
+                />
+                <p class="museum__name" id="museums__name_rijksmuseum">
+                  The Rijksmuseum
+                </p>
               </a>
-          </div>
-          <div class="museums__link-2">
-              <a href="#" target="_blank" ><img src="./images/The Cleveland Museum of Art.webp" alt="Cleveland_museum" width="400">
-                <p class="museum__name" id="museums__name_cleveland">The Cleveland Museum of Art</p>
+            </div>
+            <div class="museums__link-2 museums__link">
+              <a href="./index_cl.html" target="_blank"
+                ><img
+                  src="./images/The Cleveland Museum of Art.webp"
+                  alt="Cleveland_museum"
+                  width="400"
+                />
+                <p class="museum__name" id="museums__name_cleveland">
+                  The Cleveland Museum of Art
+                </p>
               </a>
+            </div>
+            <div class="museums__link-3 museums__link">
+              <a href="./index_a.html" target="_blank"
+                ><img
+                  src="./images/The National Museum of Australia.jpg"
+                  alt="Australia_museum"
+                  width="400"
+                  height="284"
+                />
+                <p class="museum__name" id="museums__name_australia">
+                  The National Museum of Australia
+                </p>
+              </a>
+            </div>
+            <div class="museums__link-4 museums__link">
+              <a href="./index_h.html" target="_blank"
+                ><img
+                  src="./images/Harvard Art Museums.jpg"
+                  alt="Harvard_museum"
+                  width="400"
+                  height="600"
+                />
+                <p class="museum__name" id="museums__name_harvard">
+                  The Harvard Art Museum
+                </p>
+              </a>
+            </div>
           </div>
-          <div class="museums__link-3">
-              <a href="./index_a.html" target="_blank" ><img src="./images/The National Museum of Australia.jpg"
-                  alt="Australia_museum" width="400" height="265">
-                  <p class="museum__name" id="museums__name_australia">The National Museum of Australia</p>
-                </a>
-          </div>
-          <div  class="museums__link-4">
-              <a href="#" target="_blank"><img src="./images/Harvard Art Museums.jpg"
-                    alt="Harvard_museum" width="400" height="600">
-                     <p class="museum__name" id="museums__name_harvard">The Harvard Art Museums</p>
-                  </a>
+        </section>
 
+        <section class="testimonials">
+          <h2 class="testimonial__title">Testimonials</h2>
+          <div class="testimonial__container"></div>
+        </section>
+      </main>
+
+      <!-- Start block footer -->
+      <footer>
+        <div class="footer_conteiner_main">
+          <div class="footer_qoute">
+            <button id="footer_btn">Click to get a qoute about the art</button>
+            <p id="qouteOne"></p>
+            <p id="qouteTwo"></p>
           </div>
+          <div class="footer_instagram_links">
+            <a
+              href="https://www.instagram.com/harvardartmuseums/"
+              class="instagram_link"
+              id="instagram_link_one"
+            >
+              <img
+                src="images/instagram-fill.svg"
+                alt="Instagram"
+                class="instagram_icon"
+              />
+              <span class="footer_span_links">The Harvard Art Museum</span>
+            </a>
+            <a
+              href="https://www.instagram.com/rijksmuseum/"
+              class="instagram_link"
+              id="instagram_link_two"
+            >
+              <img
+                src="images/instagram-fill.svg"
+                alt="Instagram"
+                class="instagram_icon"
+              />
+              <span class="footer_span_links">The Rijksmuseum Amsterdam</span>
+            </a>
+            <a
+              href="https://www.instagram.com/clevelandmuseumofart/"
+              class="instagram_link"
+              id="instagram_link_three"
+            >
+              <img
+                src="images/instagram-fill.svg"
+                alt="Instagram"
+                class="instagram_icon"
+              />
+              <span class="footer_span_links">The Cleveland Museum of Art</span>
+            </a>
+            <a
+              href="https://www.instagram.com/nationalmuseumofaustralia/"
+              class="instagram_link"
+              id="instagram_link_four"
+            >
+              <img
+                src="images/instagram-fill.svg"
+                alt="Instagram"
+                class="instagram_icon"
+              />
+              <span class="footer_span_links"
+                >The National Museum of Australia</span
+              >
+            </a>
+          </div>
+          <div class="footer_map">
+            <iframe
+              src="https://www.google.com/maps/d/u/0/embed?mid=1FtsZIqP6WVc_gH0rqZHrpC5Zqtuifl4&ehbc=2E312F&noprof=1"
+              width="500"
+              minwidth="120"
+              height="250"
+              minheight="120"
+            ></iframe>
+          </div>
+          <div class="footer_copyright">MusemCheck<b>©</b>2024</div>
         </div>
-      </section>
+      </footer>
+      <!-- FInish block footer -->
 
-      <section class="testimonials">
-        <h2 class="testimonial__title">Testimonials</h2>
-        <div class="testimonial__container">
-        </div>
-      </section>
-
-    </main>
-
-<!-- Start block footer -->
-<footer>
-  <div class="footer_conteiner_main">
-  <div class="footer_qoute">
-      <button id="footer_btn">Click to get a qoute about the art</button>
-      <p id="qouteOne"></p>
-      <p id="qouteTwo"></p>
-  </div>
-  <div class="footer_instagram_links">
-      <a href="https://www.instagram.com/harvardartmuseums/" class="instagram_link" id="instagram_link_one"> 
-      <img src="images/instagram-fill.svg" alt="Instagram" class="instagram_icon"> 
-      <span class="footer_span_links">Harvard Art Museums</span> 
-      </a>         
-      <a href= "https://www.instagram.com/rijksmuseum/" class= "instagram_link" id="instagram_link_two">
-      <img src= "images/instagram-fill.svg" alt= "Instagram" class= "instagram_icon">
-      <span class="footer_span_links">Rijksmuseum Amsterdam</span>
-      </a>
-      <a href="https://www.instagram.com/clevelandmuseumofart/" class="instagram_link" id="instagram_link_three"> 
-      <img src="images/instagram-fill.svg" alt="Instagram" class="instagram_icon"> 
-      <span class="footer_span_links">Cleveland Museum of Art</span> 
-      </a> 
-      <a href="https://www.instagram.com/nationalmuseumofaustralia/" class="instagram_link" id="instagram_link_four">
-      <img src="images/instagram-fill.svg" alt="Instagram" class="instagram_icon"> 
-      <span class="footer_span_links">National Museum of Australia</span> 
-      </a> 
-  </div>
-  <div class="footer_map"><iframe src="https://www.google.com/maps/d/u/0/embed?mid=1FtsZIqP6WVc_gH0rqZHrpC5Zqtuifl4&ehbc=2E312F&noprof=1" width="500" minwidth="120" height="250" minheight="120"></iframe></div>
-  <div class="footer_copyright">MusemCheck<b>©</b>2024</div>
-  </div>
-</footer>
-<!-- FInish block footer -->
-
-  </div>
-  <script src="index.js"></script>
-  <script src="./main.js"></script>
-  <script src="./museum1.js"></script>
-  </div>
-</body>
-
+      <script src="./scripts/index.js"></script>
+      <script src="./scripts/main.js"></script>
+      <script src="./scripts/museum1.js"></script>
+      <script src="./scripts/museum2.js"></script>
+      <script src="./scripts/museum3.js"></script>
+      <script src="./scripts/museum4.js"></script>
+    </div>
+  </body>
 </html>
