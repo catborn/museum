@@ -1,9 +1,49 @@
 @charset "UTF-8";
-.gallery__menu > label, .gallery__block-title {
+.gallery__menu > label, .gallery__block-title, .museum__about {
   font-weight: 500;
   font-size: 1.25625rem;
   line-height: 27.46px;
   text-align: center;
+}
+
+#museum__search_one_input-button, #museum__search_two_input-button, #museum__search_three_input-button, #museum__search_four_input-button {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+}
+
+#museum__search_one-input, #museum__search_two-input, #museum__search_three-input, #museum__search_four-input {
+  width: 200px;
+  height: 40px;
+  border: 1px solid #000000;
+  padding: 0 0.625rem 0 0.625rem;
+  border-radius: 15px;
+}
+
+#museum__search_one-button, #museum__search_two-button, #museum__search_three-button, #museum__search_four-button {
+  background-image: url("../images/search.svg");
+  background-color: #f9f9f9;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 1px solid;
+  width: 50px;
+  height: 41px;
+  border-radius: 20px;
+}
+#museum__search_one-button:hover, #museum__search_two-button:hover, #museum__search_three-button:hover, #museum__search_four-button:hover {
+  border: 2px solid;
+  background-color: #f9f9f9;
+  background-image: url("../images/search_hover.svg");
+}
+
+.museum__search_one-result, .museum__search_two-result, .museum__search_three-result, .museum__search_four-result {
+  margin: 3.125rem 0 3.125rem 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  gap: 1rem;
 }
 
 @font-face {
@@ -96,6 +136,7 @@ h2 {
 /* Конец  header */
 /********************************** GALLERY ***********************************/
 .gallery__container {
+  margin: 50px 0 0 0;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -131,7 +172,6 @@ h2 {
   border-bottom-color: #000000;
 }
 .gallery__block {
-  margin: 0 0 0 10.4375rem;
   width: 22.25rem;
   overflow: hidden;
 }
@@ -161,16 +201,30 @@ h2 {
   margin: 1.033rem 0 0 0;
 }
 
+.hidden {
+  display: none !important;
+}
+
+.museum__about {
+  margin: 0 0 1.25rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.museum__about > p {
+  text-align: start;
+}
+.museum__about_title {
+  font-family: "Avenir-Bold";
+}
 .museum__container {
-  margin-top: 3.75rem;
+  margin-top: 1.75rem;
 }
 .museum__container-all {
+  width: 50%;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
-  width: 100%;
-  margin: 0px auto;
-  align-items: center;
 }
 .museum__container_picture {
   display: flex;
@@ -181,60 +235,34 @@ h2 {
 }
 .museum__container_picture > img {
   justify-content: center;
-  margin: 0 0 20px 0;
+  margin: 0 0 1.25rem 0;
   width: 60%;
 }
 .museum__container_picture > label {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 .museum__title {
   text-align: center;
   font-size: 1.5rem;
 }
-.museum__search-result {
-  margin: 50px 0 0 0;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  gap: 1rem;
+.museum__title > a {
+  color: #000000;
 }
-
-#museum__search_input-button {
-  display: flex;
-  flex-direction: row;
-  gap: 5px;
+.museum__title > a:hover {
+  cursor: pointer;
+  color: #e36f2d;
+  transition: 0.15s ease;
 }
-#museum__search-input {
-  width: 200px;
-  height: 40px;
-  border: 1px solid #000000;
-  padding: 0 10px 0 10px;
-  border-radius: 15px;
+.museum__search {
+  margin-top: 3.75rem;
 }
-#museum__search-button {
-  background-image: url("../images/search.svg");
-  background-color: #f9f9f9;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  border: 1px solid;
-  width: 50px;
-  height: 41px;
-  border-radius: 20px;
-}
-#museum__search-button:hover {
-  border: 2px solid;
-  background-color: #f9f9f9;
-  background-image: url("../images/search_hover.svg");
-}
-
 .museums {
-  padding-bottom: 20px;
+  padding-bottom: 60px;
 }
 
 .museums__list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 10px;
 }
@@ -483,4 +511,4 @@ h2 {
   .museums__link {
     width: 300px;
   }
-}/*# sourceMappingURL=index.css.map */
+}

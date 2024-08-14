@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   setupAustralia(); // Инициализация Australia
   setupRijksmuseumSearch(); // Инициализация Rijks
 
-  const museumAll = document.getElementById("museum__all");
+  const museumAll = document.getElementById("museums");
   const museumOne = document.getElementById("museum__one");
   const museumTwo = document.getElementById("museum__two");
   const museumThree = document.getElementById("museum__three");

@@ -12,7 +12,7 @@ const setupAustralia = () => {
     div_museum3.innerHTML = `
           <div id="museum__search_three">
             <div class="museum__container">
-              <h3 class="museum__title"><a href="https://www.nma.gov.au/" target="_blank">National Museum of Australia</a></h3>
+              <h3 class="museum__title"><a href="https://www.nma.gov.au/" target="_blank">The National Museum of Australia</a></h3>
               <div class="museum__about">
               <span class="museum__about_title">About the Museum</span>
               <p>The National Museum of Australia (NMA), in the national capital Canberra,
@@ -25,9 +25,10 @@ const setupAustralia = () => {
                 and interactions between people and the Australian environment .</p>
               </div>
               <div id="museum__search_three_input-button">
+              <input id="museum__search_three-input" name="search-input" type="text" value="" autocomplete='off'>
                 <button type="button" id="museum__search_three-button"></button>
                 <p class="museum__search-hint">
-                  * Click on the button to get a random piece of art
+                  * If you want to search by keyword, enter it
                 </p>
               </div>
             </div>
@@ -50,7 +51,10 @@ const setupAustralia = () => {
   });
 
   const getRandomArtwork = async () => {
-    const url = "https://data.nma.gov.au/object?media=*";
+    const searchQuery = document.getElementById(
+      "museum__search_three-input"
+    ).value;
+    const url = `https://data.nma.gov.au/object?media=*&text=${searchQuery}`;
 
     try {
       const response = await fetch(url);
