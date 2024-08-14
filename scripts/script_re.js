@@ -1,5 +1,4 @@
-
-const apiKey = 'Tlo9VRYF';
+const apiKey = "Tlo9VRYF";
 
 async function getRandomArtwork() {
   const number = 1;
@@ -12,16 +11,17 @@ async function getRandomArtwork() {
     const data = await response.json();
     displayArtwork(data.artObjects[0]);
   } catch (error) {
-    console.error('Error', error);
+    artworkDiv.textContent = error;
   }
 }
 
 function displayArtwork(artObject) {
-  const artworkDiv = document.getElementById('artwork');
+  const artworkDiv = document.getElementById("artwork");
   artworkDiv.innerHTML = `
-    <h2>${artObject.longTitle}</h2>
-    <img src="${artObject.webImage.url}" alt="${artObject.title}" width="600" height="600">
-  `;
+    <div class = "info">
+    <h2 class = "artwork">${artObject.longTitle}</h2>
+    <img src="${artObject.webImage.url}" alt="${artObject.title}" class = "img__info" width="400" height="400">
+    </div>  `;
 }
 
-document.querySelector('.btn').addEventListener('click', getRandomArtwork);
+document.querySelector(".btn").addEventListener("click", getRandomArtwork);

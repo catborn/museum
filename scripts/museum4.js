@@ -26,9 +26,10 @@ const setupRijksmuseumSearch = () => {
                 Rembrandt , and Rembrandt's pupils.</p>
               </div>
               <div id="museum__search_four_input-button">
+              <input id="museum__search_four-input" name="search-input" type="text" value="" autocomplete='off'>
                 <button type="button" id="museum__search_four-button"></button>
                 <p class="museum__search-hint">
-                  * Click on the button to get a random piece of art
+                  * If you want to search by keyword, enter it, example: lover, paintings, dog, ship and etc.
                 </p>
               </div>
             </div>
@@ -53,15 +54,19 @@ const setupRijksmuseumSearch = () => {
   });
 
   const getRandomArtwork = async () => {
+    const searchQuery = document.getElementById(
+      "museum__search_four-input"
+    ).value;
     const apiKey = "Tlo9VRYF";
     const number = 1;
     const page = Math.floor(Math.random() * 10000) + 1;
 
-    const url = `https://www.rijksmuseum.nl/api/en/collection?key=${apiKey}&ps=${number}&p=${page}&imgonly=true`;
+    const url = `https://www.rijksmuseum.nl/api/en/collection?key=${apiKey}&ps=${number}&p=${page}&imgonly=true&q=${searchQuery}`;
 
     try {
       const response = await fetch(url);
       const data = await response.json();
+      console.log(data);
       displayArtwork(data.artObjects[0]);
     } catch (error) {
       console.error("Error", error);
