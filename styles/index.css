@@ -86,7 +86,7 @@ h2 {
 .header__menu {
   display: grid;
   grid-area: "menu";
-  grid-template-columns: repeat(6, 5px);
+  grid-template-columns: repeat(6, 20px);
   width: 53em;
   height: 1.1em;
   list-style: none;
