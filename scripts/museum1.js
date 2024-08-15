@@ -102,7 +102,6 @@ const setupHarvardSearch = () => {
 
       // Обновляем результаты поиска
       displayResult(finalJson);
-      console.log(finalJson);
     } catch (error) {
       console.error("Произошла ошибка:", error);
     }
@@ -123,6 +122,7 @@ const setupHarvardSearch = () => {
           const img = document.createElement("img");
           img.classList.add("museum__picture");
           img.src = record.primaryimageurl;
+          img.alt = record.title;
           const label_img = document.createElement("label");
           label_img.textContent = record.title || "No Title";
           divForImgLabel.appendChild(img);

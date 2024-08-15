@@ -1,30 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Rijksmuseum</title>
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Rijksmuseum</title>
-  <link rel="stylesheet" href="./styles/normalize.css" />
-  <link rel="stylesheet" href="./styles/index.css" />
-</head>
-
-<body>
-  <div class="container info">
-    <h1 class="header info__header">The Rijksmuseum</h1>
-    <p class="info__text">The Rijksmuseum is the national museum of the Netherlands dedicated to
-      Dutch arts and history and is located in Amsterdam. The Rijksmuseum was founded in The Hague on 19 November 1798
-      and moved to Amsterdam in 1808. The current main building was designed by Pierre Cuypers and first opened in 1885.
-      The museum has on display 8,000 objects of art and history, from their total collection of 1 million objects from
-      the years 1200–2000.
-      The collection contains more than 2,000 paintings from the Dutch Golden Age by notable painters such as Jacob van
-      Ruisdael, Frans Hals, Johannes Vermeer, Jan Steen, Rembrandt, and Rembrandt's pupils.
-    </p>
-    <a href="   https://www.rijksmuseum.nl/en" target="_blank" class="info__link"> https://www.rijksmuseum.nl/en</a>
-    <button class="btn info__btn">Show a picture!</button>
-    <div id="artwork"></div>
-  </div>
-  <script src="./scripts/script_re.js"></script>
-</body>
-
+  <body>
+    <div class="back">
+      <a href="./index.html"
+        ><button type="button" class="back__btn">Back</button></a
+      >
+    </div>
+    <div class="container info">
+      <h1 class="header info__header">The Rijksmuseum</h1>
+      <p class="info__text">
+        The Rijksmuseum is the national museum of the Netherlands dedicated to
+        Dutch arts and history and is located in Amsterdam. The Rijksmuseum was
+        founded in The Hague on 19 November 1798 and moved to Amsterdam in 1808.
+        The current main building was designed by Pierre Cuypers and first
+        opened in 1885. The museum has on display 8,000 objects
+        of art and history, from their total collection of 1 million objects
+        from the years 1200–2000. The collection contains more than
+        2,000 paintings from the Dutch Golden Age by notable painters such
+        as Jacob van Ruisdael, Frans Hals, Johannes Vermeer, Jan
+        Steen, Rembrandt, and Rembrandt's pupils.
+      </p>
+      <a
+        href="   https://www.rijksmuseum.nl/en"
+        target="_blank"
+        class="info__link"
+      >
+        https://www.rijksmuseum.nl/en</a
+      >
+      <button class="btn info__btn">Show a picture!</button>
+      <div id="artwork"></div>
+    </div>
+    <script src="./scripts/script_re.js"></script>
+  </body>
 </html>

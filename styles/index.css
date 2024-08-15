@@ -256,6 +256,57 @@ h2 {
 .museum__search {
   margin-top: 3.75rem;
 }
+.back {
+  display: flex;
+  align-items: flex-start;
+  margin: 10px 0 0 10px;
+}
+.back__btn {
+  height: 50px;
+  width: 100px;
+  border-radius: 50px;
+  background-color: #e5775c;
+  color: #f9f9f9;
+  border: none;
+  font-style: "Avenir-Regular";
+}
+.back__btn:hover {
+  background-color: #f09c76;
+}
+
+@media screen and (max-width: 910px) {
+  .gallery__block {
+    display: none;
+  }
+  #museum__search_one_input-button, #museum__search_two_input-button, #museum__search_three_input-button, #museum__search_four_input-button {
+    align-items: center !important;
+    flex-direction: column !important;
+    flex-wrap: wrap !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .gallery__container {
+    justify-content: center;
+    align-items: center;
+  }
+  .gallery__menu {
+    padding: 0;
+  }
+  .gallery__menu > label {
+    font-size: 13px;
+  }
+  .museum__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .museum__about {
+    margin: 1.25rem 0 1.25rem 0;
+  }
+  .museum__search_one-result, .museum__search_two-result, .museum__search_three-result, .museum__search_four-result {
+    flex-direction: column !important;
+  }
+}
 .museums {
   padding-bottom: 60px;
 }
@@ -406,7 +457,7 @@ h2 {
   margin-bottom: 10px;
   align-self: center;
   display: flex;
-  background-image: linear-gradient(to right, #feffff, #E36F2D);
+  background-image: linear-gradient(to right, #feffff, #e36f2d);
   background-repeat: no-repeat;
   background-size: 0 100%;
   text-decoration: none;
@@ -515,4 +566,4 @@ h2 {
   .museums__link {
     width: 300px;
   }
-}/*# sourceMappingURL=index.css.map */
+}
