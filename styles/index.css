@@ -83,7 +83,7 @@ h2 {
   grid-row: 1fr, 1fr;
 }
 
-.menu {
+.header__menu {
   display: grid;
   grid-area: "menu";
   grid-template-columns: repeat(6, auto);
@@ -95,11 +95,11 @@ h2 {
   padding-top: 15px;
   
 }
-.menu a:hover{
+.header__menu a:hover{
 	color:rgba(234, 116, 98, 1);
 }
 
-.buttons {
+.header__buttons {
   display: flex;
   position: absolute;
   gap: 10px;
@@ -140,8 +140,9 @@ h2 {
   gap: 10px;
   color: rgb(0, 0, 0);
 }
-.museum__search{
- align-items: center;
+.header__search__container{
+  display: flex;
+  align-self: center;
 }
 
 /* Конец  header */
