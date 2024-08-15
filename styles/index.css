@@ -95,8 +95,8 @@ h2 {
   padding-top: 15px;
   
 }
-.menu:hover{
-    color:rgba(234, 116, 98, 1);
+.menu a:hover{
+	color:rgba(234, 116, 98, 1);
 }
 
 .buttons {
