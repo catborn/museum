@@ -41,7 +41,7 @@ h2 {
 .menu a:hover{
   color:rgba(234, 116, 98, 1);
 }
-.buttons{
+.header__buttons{
     display: flex;
     position:absolute;
     gap:1em;
@@ -93,7 +93,7 @@ h2 {
   height:  (20.2px)px;
 }
 @media  screen and (max-width: 950px) and (min-width:300px){
-  .buttons{
+  .header__buttons{
     display: flex;
     position:absolute;
     gap:1em;
