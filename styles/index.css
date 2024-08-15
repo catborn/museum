@@ -92,10 +92,10 @@ h2 {
   height: 1.1em;
   list-style: none;
   padding-bottom: 60px;
-  padding-top: 10px;
+  padding-top: 15px;
   
 }
-link:hover{
+menu:hover{
   color: rgb(234, 116, 98);
 }
 
@@ -106,7 +106,7 @@ link:hover{
   top: 0px;
   right: 70px;
   list-style: none;
-  padding-top: 10px;
+  padding-top: 15px;
 }
 
 .log_in {
