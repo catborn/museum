@@ -36,23 +36,22 @@ h2 {
   list-style: none;
   padding-bottom: 60px;
   padding-top: 15px;
-
 }
-.menu a:hover{
-  color:rgba(234, 116, 98, 1);
+.menu a:hover {
+  color: rgba(234, 116, 98, 1);
 }
-.header__buttons{
-    display: flex;
-    position:absolute;
-    gap:1em;
-    top: 0px;
-    right: 20em;
-    list-style: none;
-    padding-top: 15px;
+.header__buttons {
+  display: flex;
+  position: absolute;
+  gap: 1em;
+  top: 0px;
+  right: 20em;
+  list-style: none;
+  padding-top: 15px;
 }
-.log_in{
-  width: Hug (111.49px)px;
-  height: Hug (56.2px)px;
+.log_in {
+  width: Hug (111.49px) px;
+  height: Hug (56.2px) px;
   padding: 11.1px 27.74px 11.1px 27.74px;
   gap: 11.1px;
   border-radius: 5.55px 5.55px 5.55px 5.55px;
@@ -62,16 +61,16 @@ h2 {
   border: 1.39px solid rgba(230, 230, 230, 1);
   font-weight: bold;
 }
-.getStarted{
-  width: Hug (196.78px)px;
-  height: Hug (56.2px)px;
+.getStarted {
+  width: Hug (196.78px) px;
+  height: Hug (56.2px) px;
   padding: 11.1px 16.65px 11.1px 27.74px;
   gap: 11.1px;
-  border-radius:5.55px 5.55px 5.55px 5.55px;
+  border-radius: 5.55px 5.55px 5.55px 5.55px;
   opacity: 0px;
   background: rgba(234, 116, 98, 1);
   border: 1px solid rgba(255, 255, 255, 1);
-  color:rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
   font-weight: bold;
 }
 
@@ -88,22 +87,22 @@ h2 {
   gap: 10px;
   color: rgb(0, 0, 0);
 }
-#arrow{
-  width:  (25.78px)px;
-  height:  (20.2px)px;
+#arrow {
+  width: (25.78px) px;
+  height: (20.2px) px;
 }
-@media  screen and (max-width: 950px) and (min-width:300px){
-  .header__buttons{
+@media screen and (max-width: 950px) and (min-width: 300px) {
+  .header__buttons {
     display: flex;
-    position:absolute;
-    gap:1em;
+    position: absolute;
+    gap: 1em;
     padding-top: 100px;
     right: 0px;
     list-style: none;
-} }
-     
-/* Конец  header */
+  }
+}
 
+/* Конец  header */
 
 /********************************** GALLERY ***********************************/
 .gallery {
@@ -600,5 +599,22 @@ h2 {
 
   .museums__link {
     width: 300px;
+  }
+  .testimonial__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial__card {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .testimonial__card:not(:first-child) {
+    display: none;
+  }
+
+  .stars {
+    display: none;
   }
 }

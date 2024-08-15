@@ -1,19 +1,27 @@
 @charset "UTF-8";
-.gallery__menu > label, .gallery__block-title, .museum__about {
+.gallery__menu > label,
+.gallery__block-title,
+.museum__about {
   font-weight: 500;
   font-size: 1.25625rem;
   line-height: 27.46px;
   text-align: center;
 }
 
-#museum__search_one_input-button, #museum__search_two_input-button, #museum__search_three_input-button, #museum__search_four_input-button {
+#museum__search_one_input-button,
+#museum__search_two_input-button,
+#museum__search_three_input-button,
+#museum__search_four_input-button {
   display: flex;
   flex-direction: row;
   gap: 5px;
   align-items: center;
 }
 
-#museum__search_one-input, #museum__search_two-input, #museum__search_three-input, #museum__search_four-input {
+#museum__search_one-input,
+#museum__search_two-input,
+#museum__search_three-input,
+#museum__search_four-input {
   width: 200px;
   height: 40px;
   border: 1px solid #000000;
@@ -21,7 +29,10 @@
   border-radius: 15px;
 }
 
-#museum__search_one-button, #museum__search_two-button, #museum__search_three-button, #museum__search_four-button {
+#museum__search_one-button,
+#museum__search_two-button,
+#museum__search_three-button,
+#museum__search_four-button {
   background-image: url("../images/search.svg");
   background-color: #f9f9f9;
   background-position: center;
@@ -32,13 +43,19 @@
   height: 41px;
   border-radius: 20px;
 }
-#museum__search_one-button:hover, #museum__search_two-button:hover, #museum__search_three-button:hover, #museum__search_four-button:hover {
+#museum__search_one-button:hover,
+#museum__search_two-button:hover,
+#museum__search_three-button:hover,
+#museum__search_four-button:hover {
   border: 2px solid;
   background-color: #f9f9f9;
   background-image: url("../images/search_hover.svg");
 }
 
-.museum__search_one-result, .museum__search_two-result, .museum__search_three-result, .museum__search_four-result {
+.museum__search_one-result,
+.museum__search_two-result,
+.museum__search_three-result,
+.museum__search_four-result {
   margin: 3.125rem 0 3.125rem 0;
   display: flex;
   flex-flow: row nowrap;
@@ -83,46 +100,55 @@ h2 {
   grid-row: 1fr, 1fr;
 }
 
-.header__menu {
+.menu {
   display: grid;
   grid-area: "menu";
   grid-template-columns: repeat(6, auto);
-  width: 45em;
+  width: 53em;
+  gap: 10px;
   height: 1.1em;
   list-style: none;
-  padding-bottom: 90px;
-  padding-top: 20px;
-  
+  padding-bottom: 60px;
+  padding-top: 15px;
 }
-.header__menu a:hover{
-	color:rgba(234, 116, 98, 1);
+
+.menu a:hover {
+  color: rgb(234, 116, 98);
 }
 
 .header__buttons {
   display: flex;
   position: absolute;
-  gap: 10px;
+  gap: 1em;
   top: 0px;
-  right: 80px;
+  right: 20em;
   list-style: none;
-  padding-top: 20px;
+  padding-top: 15px;
 }
 
 .log_in {
-  width: 65px;
-  height: 35px;
-  color: rgb(8, 8, 8);
-  border: 0.7px solid rgb(230, 230, 230);
-  background-color: rgb(255, 255, 255);
+  width: Hug 111.49px px;
+  height: Hug 56.2px px;
+  padding: 11.1px 27.74px 11.1px 27.74px;
+  gap: 11.1px;
+  border-radius: 5.55px 5.55px 5.55px 5.55px;
+  border: 1.39px 0px 0px 0px;
+  opacity: 0px;
+  background: rgb(255, 255, 255);
+  border: 1.39px solid rgb(230, 230, 230);
   font-weight: bold;
 }
 
 .getStarted {
-  width: 130px;
-  height: 35px;
-  background-color: rgb(234, 116, 98);
-  color: rgb(255, 255, 255);
+  width: Hug 196.78px px;
+  height: Hug 56.2px px;
+  padding: 11.1px 16.65px 11.1px 27.74px;
+  gap: 11.1px;
+  border-radius: 5.55px 5.55px 5.55px 5.55px;
+  opacity: 0px;
+  background: rgb(234, 116, 98);
   border: 1px solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   font-weight: bold;
 }
 
@@ -139,23 +165,22 @@ h2 {
   gap: 10px;
   color: rgb(0, 0, 0);
 }
-.museum_search{
-margin-top: 15px;
-  width: auto;
-  height:auto ;
-  font-size: 20px;
+
+#arrow {
+  width: 25.78px px;
+  height: 20.2px px;
 }
-@media  screen and (max-width: 850px) and (min-width:300px){
-  .header__buttons{
+
+@media screen and (max-width: 950px) and (min-width: 300px) {
+  .header__buttons {
     display: flex;
-    gap:1em;
-    padding-top: 50px;
+    position: absolute;
+    gap: 1em;
+    padding-top: 100px;
     right: 0px;
     list-style: none;
-    align-self: center;
-
-} }
-
+  }
+}
 /* Конец  header */
 /********************************** GALLERY ***********************************/
 .gallery__container {
@@ -172,10 +197,10 @@ margin-top: 15px;
   padding-left: 2.9375rem;
   border-bottom: 1.12px solid #e5e5e5;
 }
-.gallery__menu > input[type=radio] {
+.gallery__menu > input[type="radio"] {
   display: none;
 }
-.gallery__menu > input[type=radio]:checked + label {
+.gallery__menu > input[type="radio"]:checked + label {
   cursor: default;
   font-weight: bold;
   color: #e36f2d;
@@ -301,7 +326,10 @@ margin-top: 15px;
   .gallery__block {
     display: none;
   }
-  #museum__search_one_input-button, #museum__search_two_input-button, #museum__search_three_input-button, #museum__search_four_input-button {
+  #museum__search_one_input-button,
+  #museum__search_two_input-button,
+  #museum__search_three_input-button,
+  #museum__search_four_input-button {
     align-items: center !important;
     flex-direction: column !important;
     flex-wrap: wrap !important;
@@ -326,7 +354,10 @@ margin-top: 15px;
   .museum__about {
     margin: 1.25rem 0 1.25rem 0;
   }
-  .museum__search_one-result, .museum__search_two-result, .museum__search_three-result, .museum__search_four-result {
+  .museum__search_one-result,
+  .museum__search_two-result,
+  .museum__search_three-result,
+  .museum__search_four-result {
     flex-direction: column !important;
   }
 }
@@ -589,4 +620,15 @@ margin-top: 15px;
   .museums__link {
     width: 300px;
   }
-}
+  .testimonial__container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .testimonial__card {
+    width: 100%;
+    max-width: 300px;
+  }
+  .testimonial__card:not(:first-child) {
+    display: none;
+  }
+} /*# sourceMappingURL=index.css.map */
