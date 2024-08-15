@@ -140,9 +140,10 @@ h2 {
   color: rgb(0, 0, 0);
 }
 .museum_search{
+  padding-top: 10px;
   width: auto;
   height:auto ;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 /* Конец  header */
