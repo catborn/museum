@@ -9,49 +9,75 @@
     <link rel="stylesheet" href="./styles/index.css" />
   </head>
 
-<body>
-  <div class="container">
-    <!-- header  start -->
-    <header>
-
-      <ul class="header__menu">
-        <li><a href=" ">Home</a></li>
-        <li><a href=" ">Events</a></li>
-        <li><a href=" ">Shop</a></li>
-
-      </ul>
-      <ul class="header__buttons">
-        <li><button class="log_in">Log in</button></li>
-        <li><button class="getStarted">Get started
-            <img src="./images/Vector.svg"id="arrow">
-          </button></li>
-      </ul>
-      <h2>Let's Find The Museum! <br>
-        <input type="text" class="museum_search" placeholder="Search the museum">
-      </h2>
-      
-    </header>
-    <!-- header end -->
-
-    <main>
-      <section class="gallery" id="gallery">
-
-        <div class="gallery__container" id="gallery__container">
-          <div class="gallery__block">
-            <h3 class="gallery__block-title">GALLERY</h3>
-            <h3 class="gallery__block-text">Our special gallery</h3>
-          </div>
-          <div class="gallery__menu">
-            <input checked id="__menu_tab-btn-1" name="tab-btn" type="radio" value="" />
-            <label for="__menu_tab-btn-1" id="__menu_tab-btn-1">All</label>
-            <input id="__menu_tab-btn-2" name="tab-btn" type="radio" value="" />
-            <label for="__menu_tab-btn-2" id="__menu_tab-btn-2">Harvard</label>
-            <input id="__menu_tab-btn-3" name="tab-btn" type="radio" value="" />
-            <label for="__menu_tab-btn-3">Museum 2</label>
-            <input id="__menu_tab-btn-4" name="tab-btn" type="radio" value="" />
-            <label for="__menu_tab-btn-4">Museum 3</label>
-            <input id="__menu_tab-btn-5" name="tab-btn" type="radio" value="" />
-            <label for="__menu_tab-btn-5">Museum 4</label>
+  <body>
+    <div class="container">
+      <!-- header  start -->
+      <header>
+        <ul class="menu">
+          <li><a href=" ">Home</a></li>
+          <li><a href=" ">Products</a></li>
+          <li><a href=" ">Showcase</a></li>
+        </ul>
+        <ul class="buttons">
+          <li><button class="log_in">Log in</button></li>
+          <li>
+            <button class="getStarted">
+              Get started
+              <img src="./images/Vector.svg" id="arrow" />
+            </button>
+          </li>
+        </ul>
+        <h2>Let's Find The Museum!</h2>
+        <input type="text" class="museum_search" placeholder="Search museum" />
+      </header>
+      <!-- header end -->
+      <main>
+        <section class="gallery" id="gallery">
+          <div class="gallery__container" id="gallery__container">
+            <div class="gallery__block">
+              <h3 class="gallery__block-title">GALLERY</h3>
+              <h3 class="gallery__block-text">Our special gallery</h3>
+            </div>
+            <div class="gallery__menu">
+              <input
+                checked
+                id="__menu_tab-btn-1"
+                name="tab-btn"
+                type="radio"
+                value=""
+              />
+              <label for="__menu_tab-btn-1" id="__menu_tab-btn-1">All</label>
+              <input
+                id="__menu_tab-btn-2"
+                name="tab-btn"
+                type="radio"
+                value=""
+              />
+              <label for="__menu_tab-btn-2" id="__menu_tab-btn-2"
+                >Harvard</label
+              >
+              <input
+                id="__menu_tab-btn-3"
+                name="tab-btn"
+                type="radio"
+                value=""
+              />
+              <label for="__menu_tab-btn-3">Cleveland</label>
+              <input
+                id="__menu_tab-btn-4"
+                name="tab-btn"
+                type="radio"
+                value=""
+              />
+              <label for="__menu_tab-btn-4">Australia</label>
+              <input
+                id="__menu_tab-btn-5"
+                name="tab-btn"
+                type="radio"
+                value=""
+              />
+              <label for="__menu_tab-btn-5">Rijks</label>
+            </div>
           </div>
           <div class="museum__container">
             <div class="museum__one hidden" id="museum__one"></div>
