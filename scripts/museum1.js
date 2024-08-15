@@ -12,7 +12,7 @@ const setupHarvardSearch = () => {
     div_museum1.innerHTML = `
       <form id="museum__search_one">
         <div class="museum__container">
-          <h3 class="museum__title"><a href='https://harvardartmuseums.org/' target="_blank">Harvard Art Museum</a></h3>
+          <h3 class="museum__title"><a href='https://harvardartmuseums.org/' target="_blank">The Harvard Art Museum</a></h3>
           <div class="museum__about">
           <span class="museum__about_title">About the Museum</span>
             <p>Visitors can enjoy the many amenities that greet 
