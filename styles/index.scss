@@ -92,12 +92,12 @@ h2 {
   width:  (25.78px)px;
   height:  (20.2px)px;
 }
-@media  screen and (max-width: 950px) and (min-width:450px){
+@media  screen and (max-width: 950px) and (min-width:300px){
   .buttons{
     display: flex;
     position:absolute;
     gap:1em;
-    top: 50px;
+    top: 200px;
     right: 0px;
     list-style: none;
     padding-top: 15px;
