@@ -43,14 +43,14 @@ document.addEventListener("DOMContentLoaded", () => {
           museumThree.classList.add("hidden");
           museumFour.classList.add("hidden");
           break;
-        case "__menu_tab-btn-4": //Australia
+        case "__menu_tab-btn-4": // Australia
           museumAll.classList.add("hidden");
           museumOne.classList.add("hidden");
           museumTwo.classList.add("hidden");
           museumThree.classList.remove("hidden");
           museumFour.classList.add("hidden");
           break;
-        case "__menu_tab-btn-5": //Rijsk
+        case "__menu_tab-btn-5": // Rijks
           museumAll.classList.add("hidden");
           museumOne.classList.add("hidden");
           museumTwo.classList.add("hidden");
