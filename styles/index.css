@@ -83,29 +83,24 @@ h2 {
   grid-row: 1fr, 1fr;
 }
 
-.header__menu {
+.menu {
   display: grid;
   grid-area: "menu";
   grid-template-columns: repeat(6, auto);
-  width: 45em;
+  width: 53em;
+  gap: 10px;
   height: 1.1em;
   list-style: none;
-  padding-bottom: 90px;
-  padding-top: 20px;
-  
-}
-.header__menu a:hover{
-	color:rgba(234, 116, 98, 1);
+  padding-bottom: 60px;
 }
 
-.header__buttons {
+.buttons {
   display: flex;
   position: absolute;
   gap: 10px;
   top: 0px;
-  right: 80px;
+  right: 70px;
   list-style: none;
-  padding-top: 20px;
 }
 
 .log_in {
@@ -114,7 +109,6 @@ h2 {
   color: rgb(8, 8, 8);
   border: 0.7px solid rgb(230, 230, 230);
   background-color: rgb(255, 255, 255);
-  font-weight: bold;
 }
 
 .getStarted {
@@ -123,7 +117,6 @@ h2 {
   background-color: rgb(234, 116, 98);
   color: rgb(255, 255, 255);
   border: 1px solid rgb(255, 255, 255);
-  font-weight: bold;
 }
 
 a {
@@ -139,22 +132,6 @@ h2 {
   gap: 10px;
   color: rgb(0, 0, 0);
 }
-.museum_search{
-margin-top: 15px;
-  width: auto;
-  height:auto ;
-  font-size: 20px;
-}
-@media  screen and (max-width: 850px) and (min-width:300px){
-  .header__buttons{
-    display: flex;
-    gap:1em;
-    padding-top: 50px;
-    right: 0px;
-    list-style: none;
-    align-self: center;
-
-} }
 
 /* Конец  header */
 /********************************** GALLERY ***********************************/
