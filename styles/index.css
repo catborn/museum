@@ -1,27 +1,19 @@
 @charset "UTF-8";
-.gallery__menu > label,
-.gallery__block-title,
-.museum__about {
+.gallery__menu > label, .gallery__block-title, .museum__about {
   font-weight: 500;
   font-size: 1.25625rem;
   line-height: 27.46px;
   text-align: center;
 }
 
-#museum__search_one_input-button,
-#museum__search_two_input-button,
-#museum__search_three_input-button,
-#museum__search_four_input-button {
+#museum__search_one_input-button, #museum__search_two_input-button, #museum__search_three_input-button, #museum__search_four_input-button {
   display: flex;
   flex-direction: row;
   gap: 5px;
   align-items: center;
 }
 
-#museum__search_one-input,
-#museum__search_two-input,
-#museum__search_three-input,
-#museum__search_four-input {
+#museum__search_one-input, #museum__search_two-input, #museum__search_three-input, #museum__search_four-input {
   width: 200px;
   height: 40px;
   border: 1px solid #000000;
@@ -29,10 +21,7 @@
   border-radius: 15px;
 }
 
-#museum__search_one-button,
-#museum__search_two-button,
-#museum__search_three-button,
-#museum__search_four-button {
+#museum__search_one-button, #museum__search_two-button, #museum__search_three-button, #museum__search_four-button {
   background-image: url("../images/search.svg");
   background-color: #f9f9f9;
   background-position: center;
@@ -43,19 +32,13 @@
   height: 41px;
   border-radius: 20px;
 }
-#museum__search_one-button:hover,
-#museum__search_two-button:hover,
-#museum__search_three-button:hover,
-#museum__search_four-button:hover {
+#museum__search_one-button:hover, #museum__search_two-button:hover, #museum__search_three-button:hover, #museum__search_four-button:hover {
   border: 2px solid;
   background-color: #f9f9f9;
   background-image: url("../images/search_hover.svg");
 }
 
-.museum__search_one-result,
-.museum__search_two-result,
-.museum__search_three-result,
-.museum__search_four-result {
+.museum__search_one-result, .museum__search_two-result, .museum__search_three-result, .museum__search_four-result {
   margin: 3.125rem 0 3.125rem 0;
   display: flex;
   flex-flow: row nowrap;
@@ -127,8 +110,8 @@ h2 {
 }
 
 .log_in {
-  width: 65px;
-  height: 35px;
+  width: 65 px;
+  height: 35 px;
   color: rgb(8, 8, 8);
   border: 0.7px solid rgb(230, 230, 230);
   background: rgb(255, 255, 255);
@@ -188,10 +171,10 @@ h2 {
   padding-left: 2.9375rem;
   border-bottom: 1.12px solid #e5e5e5;
 }
-.gallery__menu > input[type="radio"] {
+.gallery__menu > input[type=radio] {
   display: none;
 }
-.gallery__menu > input[type="radio"]:checked + label {
+.gallery__menu > input[type=radio]:checked + label {
   cursor: default;
   font-weight: bold;
   color: #e36f2d;
@@ -317,10 +300,7 @@ h2 {
   .gallery__block {
     display: none;
   }
-  #museum__search_one_input-button,
-  #museum__search_two_input-button,
-  #museum__search_three_input-button,
-  #museum__search_four_input-button {
+  #museum__search_one_input-button, #museum__search_two_input-button, #museum__search_three_input-button, #museum__search_four_input-button {
     align-items: center !important;
     flex-direction: column !important;
     flex-wrap: wrap !important;
@@ -345,10 +325,7 @@ h2 {
   .museum__about {
     margin: 1.25rem 0 1.25rem 0;
   }
-  .museum__search_one-result,
-  .museum__search_two-result,
-  .museum__search_three-result,
-  .museum__search_four-result {
+  .museum__search_one-result, .museum__search_two-result, .museum__search_three-result, .museum__search_four-result {
     flex-direction: column !important;
   }
 }
@@ -623,6 +600,6 @@ h2 {
     display: none;
   }
   .stars {
-    display: none;
+    transform: scale(0.8);
   }
-} /*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */
