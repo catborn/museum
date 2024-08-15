@@ -1,27 +1,19 @@
 @charset "UTF-8";
-.gallery__menu > label,
-.gallery__block-title,
-.museum__about {
+.gallery__menu > label, .gallery__block-title, .museum__about {
   font-weight: 500;
   font-size: 1.25625rem;
   line-height: 27.46px;
   text-align: center;
 }
 
-#museum__search_one_input-button,
-#museum__search_two_input-button,
-#museum__search_three_input-button,
-#museum__search_four_input-button {
+#museum__search_one_input-button, #museum__search_two_input-button, #museum__search_three_input-button, #museum__search_four_input-button {
   display: flex;
   flex-direction: row;
   gap: 5px;
   align-items: center;
 }
 
-#museum__search_one-input,
-#museum__search_two-input,
-#museum__search_three-input,
-#museum__search_four-input {
+#museum__search_one-input, #museum__search_two-input, #museum__search_three-input, #museum__search_four-input {
   width: 200px;
   height: 40px;
   border: 1px solid #000000;
@@ -29,10 +21,7 @@
   border-radius: 15px;
 }
 
-#museum__search_one-button,
-#museum__search_two-button,
-#museum__search_three-button,
-#museum__search_four-button {
+#museum__search_one-button, #museum__search_two-button, #museum__search_three-button, #museum__search_four-button {
   background-image: url("../images/search.svg");
   background-color: #f9f9f9;
   background-position: center;
@@ -43,19 +32,13 @@
   height: 41px;
   border-radius: 20px;
 }
-#museum__search_one-button:hover,
-#museum__search_two-button:hover,
-#museum__search_three-button:hover,
-#museum__search_four-button:hover {
+#museum__search_one-button:hover, #museum__search_two-button:hover, #museum__search_three-button:hover, #museum__search_four-button:hover {
   border: 2px solid;
   background-color: #f9f9f9;
   background-image: url("../images/search_hover.svg");
 }
 
-.museum__search_one-result,
-.museum__search_two-result,
-.museum__search_three-result,
-.museum__search_four-result {
+.museum__search_one-result, .museum__search_two-result, .museum__search_three-result, .museum__search_four-result {
   margin: 3.125rem 0 3.125rem 0;
   display: flex;
   flex-flow: row nowrap;
@@ -109,22 +92,18 @@ h2 {
   height: 1.1em;
   list-style: none;
   padding-bottom: 60px;
-<<<<<<< HEAD
   padding-top: 15px;
 }
 
 .menu a:hover {
   color: rgb(234, 116, 98);
-=======
->>>>>>> 548474a2b4161d2433d4f6a6efffecb7b1a857cc
 }
 
-.buttons {
+.header__buttons {
   display: flex;
   position: absolute;
   gap: 1em;
   top: 0px;
-<<<<<<< HEAD
   right: 20em;
   list-style: none;
   padding-top: 15px;
@@ -141,18 +120,6 @@ h2 {
   background: rgb(255, 255, 255);
   border: 1.39px solid rgb(230, 230, 230);
   font-weight: bold;
-=======
-  right: 70px;
-  list-style: none;
-}
-
-.log_in {
-  width: 65px;
-  height: 35px;
-  color: rgb(8, 8, 8);
-  border: 0.7px solid rgb(230, 230, 230);
-  background-color: rgb(255, 255, 255);
->>>>>>> 548474a2b4161d2433d4f6a6efffecb7b1a857cc
 }
 
 .getStarted {
@@ -164,11 +131,8 @@ h2 {
   opacity: 0px;
   background: rgb(234, 116, 98);
   border: 1px solid rgb(255, 255, 255);
-<<<<<<< HEAD
   color: rgb(255, 255, 255);
   font-weight: bold;
-=======
->>>>>>> 548474a2b4161d2433d4f6a6efffecb7b1a857cc
 }
 
 a {
@@ -185,7 +149,6 @@ h2 {
   color: rgb(0, 0, 0);
 }
 
-<<<<<<< HEAD
 #arrow {
   width: 25.78px px;
   height: 20.2px px;
@@ -201,8 +164,6 @@ h2 {
     list-style: none;
   }
 }
-=======
->>>>>>> 548474a2b4161d2433d4f6a6efffecb7b1a857cc
 /* Конец  header */
 /********************************** GALLERY ***********************************/
 .gallery__container {
@@ -219,10 +180,10 @@ h2 {
   padding-left: 2.9375rem;
   border-bottom: 1.12px solid #e5e5e5;
 }
-.gallery__menu > input[type="radio"] {
+.gallery__menu > input[type=radio] {
   display: none;
 }
-.gallery__menu > input[type="radio"]:checked + label {
+.gallery__menu > input[type=radio]:checked + label {
   cursor: default;
   font-weight: bold;
   color: #e36f2d;
@@ -348,10 +309,7 @@ h2 {
   .gallery__block {
     display: none;
   }
-  #museum__search_one_input-button,
-  #museum__search_two_input-button,
-  #museum__search_three_input-button,
-  #museum__search_four_input-button {
+  #museum__search_one_input-button, #museum__search_two_input-button, #museum__search_three_input-button, #museum__search_four_input-button {
     align-items: center !important;
     flex-direction: column !important;
     flex-wrap: wrap !important;
@@ -376,10 +334,7 @@ h2 {
   .museum__about {
     margin: 1.25rem 0 1.25rem 0;
   }
-  .museum__search_one-result,
-  .museum__search_two-result,
-  .museum__search_three-result,
-  .museum__search_four-result {
+  .museum__search_one-result, .museum__search_two-result, .museum__search_three-result, .museum__search_four-result {
     flex-direction: column !important;
   }
 }
@@ -653,4 +608,7 @@ h2 {
   .testimonial__card:not(:first-child) {
     display: none;
   }
-} /*# sourceMappingURL=index.css.map */
+  .stars {
+    display: none;
+  }
+}/*# sourceMappingURL=index.css.map */
