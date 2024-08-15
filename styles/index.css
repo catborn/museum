@@ -96,7 +96,7 @@ h2 {
   
 }
 .menu:hover{
-  color: rgb(234, 116, 98);
+    color:rgba(234, 116, 98, 1);
 }
 
 .buttons {
