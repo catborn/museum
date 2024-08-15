@@ -142,10 +142,9 @@ h2 {
 }
 .header__search__container{
   display: flex;
+  justify-content: center;
 }
-.museum_search{
-  align-self: center;
-}
+
 
 /* Конец  header */
 /********************************** GALLERY ***********************************/
