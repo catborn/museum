@@ -92,6 +92,11 @@ h2 {
   height: 1.1em;
   list-style: none;
   padding-bottom: 60px;
+  padding-top: 10px;
+  
+}
+link:hover{
+  color: rgb(234, 116, 98);
 }
 
 .buttons {
@@ -101,6 +106,7 @@ h2 {
   top: 0px;
   right: 70px;
   list-style: none;
+  padding-top: 10px;
 }
 
 .log_in {
