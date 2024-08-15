@@ -87,7 +87,7 @@ h2 {
   display: grid;
   grid-area: "menu";
   grid-template-columns: repeat(6, auto);
-  width: 53em;
+  width: 50em;
   height: 1.1em;
   list-style: none;
   padding-bottom: 90px;
