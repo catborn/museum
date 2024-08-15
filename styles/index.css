@@ -142,7 +142,7 @@ h2 {
 }
 .header__search__container{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 
