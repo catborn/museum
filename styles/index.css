@@ -141,7 +141,7 @@ h2 {
   color: rgb(0, 0, 0);
 }
 .museum__search{
-  align-self: center;
+ align-items: center;
 }
 
 /* Конец  header */
