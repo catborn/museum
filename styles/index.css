@@ -141,10 +141,12 @@ h2 {
   color: rgb(0, 0, 0);
 }
 .header__search__container{
-  display: flex;
-  justify-content: space-between;
+  position: relative;
 }
-
+.museum_search{
+  display: flex;
+  justify-content: center;
+}
 
 /* Конец  header */
 /********************************** GALLERY ***********************************/
