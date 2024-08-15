@@ -148,11 +148,11 @@ margin-top: 15px;
 @media  screen and (max-width: 950px) and (min-width:300px){
   .header__buttons{
     display: flex;
-    position:absolute;
     gap:1em;
     padding-top: 50px;
     right: 0px;
     list-style: none;
+
 } }
 
 /* Конец  header */
