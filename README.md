@@ -10,4 +10,4 @@ https://catborn.github.io/museum/
 - Educational Value: Provides informative content about art and museum exhibitions.
 - Visual Appeal: Showcases artworks in a visually stunning digital environment.
 
-# [inspired by](https://www.figma.com/design/8FnPPzsmVSH3YVhy7qDxu9/Museum-(Community)?node-id=0-1&t=QikRPyYesSp6pqCg-0)
+## [inspired by](https://www.figma.com/design/8FnPPzsmVSH3YVhy7qDxu9/Museum-(Community)?node-id=0-1&t=QikRPyYesSp6pqCg-0)
