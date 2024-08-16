@@ -400,7 +400,7 @@ h2 {
 }
 // testimonials end
 
-/* Start css for block footer */
+/* Start css for block footer */--------------------------------
 .footer_conteiner_main {
   margin-top: 5%;
   display: grid;
@@ -415,13 +415,12 @@ h2 {
   grid-row: 1/2;
   justify-content: center;
   align-content: center;
-  position: relative;
   margin-bottom: 3%;
 }
 
 #footer_btn {
-  position: absolute;
-  width: 17vw;
+  position: relative;
+  width: 250px;
   margin-top: 0.5%;
   justify-self: center;
   background: rgb(227, 111, 45);
@@ -533,7 +532,7 @@ h2 {
   text-align: center;
   font-family: "Avenir-Bold";
 }
-/* finish css for block footer */
+/* finish css for block footer */-------------------------------
 
 .info {
   display: flex;
@@ -632,5 +631,80 @@ h2 {
 
   .stars {
     transform: scale(0.8);
+  }
+
+    // footer media start-------------------------------
+    .footer_conteiner_main {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-row: 1fr, 1fr, 1fr, 1fr;
+      width: 400px;
+  }  
+  .footer_qoute {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    max-width: 400px;
+  }
+
+  .footer_btn {
+    width: 300px;
+  }
+
+  #footer_btn:before {
+  display: none;
+  }
+
+  #footer_btn:after {
+    display: none;
+  }
+
+  #footer_btn:hover:before {
+  display: none;
+  }
+
+  #footer_btn:hover:after {
+  display: none;
+  }
+
+  #qoutwOne {
+    margin-top: 20px;
+  }
+  
+  #qouteTwo {
+    margin-top: 2%;
+    text-align: right;
+  }
+
+  .footer_instagram_links{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: block;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .instagram_link {
+    text-align: center;
+    margin-bottom: 5px;
+    align-self: center;
+    display: flex;
+  }
+
+  .footer_span_links {
+    display: block;
+    width: 300px;
+  }
+  
+  .footer_map {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  
+  .footer_copyright {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    margin-top: 100px;
   }
 }
