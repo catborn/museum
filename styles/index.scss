@@ -326,29 +326,41 @@ h2 {
 
 .museums {
   padding-bottom: 60px;
-}
-
-.museums__list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 10px;
-}
-
-.museums__link-1 {
-  grid-area: 1/1/3/2;
-}
-
-.museums__link-2 {
-  grid-area: 1/2/2/3;
-}
-
-.museums__link-3 {
-  grid-area: 2/2/3/3;
-}
-
-.museums__link-4 {
-  grid-area: 1/3/3/4;
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+  }
+  &__link {
+    &-1 {
+      grid-area: 1/1/3/2;
+      &_img {
+        width: 400px;
+        height: 600px;
+      }
+    }
+    &-2 {
+      grid-area: 1/2/2/3;
+      &_img {
+        width: 400px;
+      }
+    }
+    &-3 {
+      grid-area: 2/2/3/3;
+      &_img {
+        width: 400px;
+        height: 284px;
+      }
+    }
+    &-4 {
+      grid-area: 1/3/3/4;
+      &_img {
+        width: 400px;
+        height: 600px;
+      }
+    }
+  }
 }
 
 .museum__name {
@@ -551,7 +563,7 @@ h2 {
 
 .info__btn {
   padding: 15px;
-  border-radius: 5px;
+  border-radius: 50px;
   border: none;
   color: #fff;
   background-color: #e5775c;
@@ -567,30 +579,43 @@ h2 {
 }
 
 @media all and (max-width: 450px) {
-  .museums__list {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 0.5fr 0.5fr 1fr;
+  .museums {
+    &__list {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 0.5fr 0.5fr 1fr;
+    }
+    &__link {
+      width: 300px;
+      &-1 {
+        grid-area: 1/1/2/2;
+        &_img {
+          width: 300px;
+          height: 500px;
+        }
+      }
+      &-2 {
+        grid-area: 2/1/3/2;
+        &_img {
+          width: 300px;
+        }
+      }
+      &-3 {
+        grid-area: 3/1/4/2;
+        &_img {
+          width: 300px;
+          height: 184px;
+        }
+      }
+      &-4 {
+        grid-area: 4/1/5/2;
+        &_img {
+          width: 300px;
+          height: 500px;
+        }
+      }
+    }
   }
 
-  .museums__link-1 {
-    grid-area: 1/1/2/2;
-  }
-
-  .museums__link-2 {
-    grid-area: 2/1/3/2;
-  }
-
-  .museums__link-3 {
-    grid-area: 3/1/4/2;
-  }
-
-  .museums__link-4 {
-    grid-area: 4/1/5/2;
-  }
-
-  .museums__link {
-    width: 300px;
-  }
   .testimonial__container {
     flex-direction: column;
     align-items: center;
