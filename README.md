@@ -3,6 +3,7 @@
 Museum is not just a website; it's a gateway to the art world, accessible to every internet user. Whether you're a passionate art enthusiast or a curious visitor, our site offers an engaging journey through the galleries of a virtual museum.
 
 https://catborn.github.io/museum/
+
 <img src="./images/project.jpg">
 
 # Project Highlights:
